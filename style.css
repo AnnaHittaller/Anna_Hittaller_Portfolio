@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -7,7 +9,6 @@
 :root {
 	--brightpink: #ff2168;
 	--overlay: rgba(255, 33, 104, 0.3);
-
 	--dark: #2d282a;
 	--seethrough-pink: rgba(255, 216, 228, 0.8);
 	--seethrough-pink-05: rgba(255, 216, 228, 0.5);
@@ -15,7 +16,6 @@
 	--seethrough-pink-015: rgba(255, 216, 228, 0.15);
 	--middle-pink-1: rgba(255, 184, 207, 1);
 	--middle-pink-08: rgba(255, 184, 207, 0.8);
-	/* --darkgrey: #676062; */
 }
 
 body {
@@ -44,8 +44,7 @@ p {
 }
 
 button {
-	font-family: Comfortaa, cursive;
-	font-size: 1rem;
+    font: 1rem Comfortaa, cursive;
 	background-color: transparent;
 	color: var(--brightpink);
 	border: 2px solid var(--brightpink);
@@ -103,6 +102,8 @@ nav {
 .menu-item:hover img {
 	opacity: 1;
 	transform: translateY(-1rem);
+	-webkit-transform: translateY(-1rem);
+	-ms-transform: translateY(-1rem);
 }
 
 .menu-item {
@@ -158,8 +159,6 @@ nav {
 	display: flex;
 }
 
-/* Flex and font shorthands */
-
 .about-wrapper {
 	margin: 0 auto;
 	display: flex;
@@ -194,9 +193,7 @@ nav {
 }
 
 .code {
-	font-size: 3.5vw;
-	font-family: Montserrat, sans-serif;
-	font-weight: bold;
+    font: bold 3.5vw Montserrat, sans-serif;
 	color: var(--seethrough-pink);
 	align-self: flex-end;
 	padding: 0 1vw;
@@ -256,6 +253,8 @@ h2 {
 .right a:hover {
 	color: var(--middle-pink-1);
 	transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
 }
 
 .left {
@@ -371,19 +370,12 @@ h2 {
 	transition: 0.8s;
 }
 
-/* .icon-background:hover {
-    background-color: var(--seethrough-pink-05);
-} */
-
 .icon-background i {
 	color: var(--seethrough-pink-05);
 	font-size: 3.5rem;
 	transition: 0.5s ease;
 }
 
-/* .icon-background:hover i {
-    color: var(--middle-pink-1);
-} */
 
 /* PROJECT SECTION ------------------ */
 
@@ -533,6 +525,8 @@ h2 {
 .project-links a i:hover {
 	color: var(--middle-pink-1);
 	transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
 }
 
 /* CONTACT SECTION ------------------- */
@@ -575,9 +569,7 @@ form label {
 	background-color: var(--seethrough-pink-015);
 	border: none;
 	color: var(--middle-pink-08);
-	font-size: 1rem;
-	font-family: Comfortaa, cursive;
-	font-weight: bold;
+    font: bold 1rem Comfortaa, cursive;
 	outline: none;
 }
 
@@ -589,15 +581,12 @@ form label {
 }
 
 ::placeholder {
-	font-size: 1rem;
-	font-family: Comfortaa, cursive;
-	font-weight: bold;
+    font: bold 1rem Comfortaa, cursive;
 	color: var(--brightpink);
 }
 
 input[type="submit"] {
-	font-family: Comfortaa, cursive;
-	font-size: 1rem;
+    font: 1rem Comfortaa, cursive;
 	background-color: transparent;
 	color: var(--brightpink);
 	border: 2px solid var(--brightpink);
@@ -622,10 +611,8 @@ footer {
 }
 
 footer span {
-	font-family: Comfortaa, cursive;
-	font-size: 14px;
+    font: 14px/1.5 Comfortaa, cursive;
 	color: var(--middle-pink-1);
-	line-height: 1.5;
 }
 
 /* Individual project page section ------------ */
@@ -649,12 +636,12 @@ footer span {
 
 .project-wrapper .section-title-wrapper {
 	padding: 0 0 2rem 0;
- margin-top: -3rem; 
+	margin-top: -3rem;
 	text-align: center;
 }
 
 .project-wrapper h2 {
-    line-height: .9;
+	line-height: 0.9;
 }
 
 .project-wrapper p:nth-of-type(1),
@@ -665,7 +652,7 @@ footer span {
 }
 
 .project-wrapper .brightpink {
-    text-align: center;
+	text-align: center;
 }
 
 .project-images {
@@ -719,12 +706,12 @@ footer span {
 		margin-top: 1.5rem;
 	}
 
-    .project-wrapper .section-title-wrapper h2 {
+	.project-wrapper .section-title-wrapper h2 {
 		font-size: 10vw;
 		position: relative;
 		top: 3vw;
 		text-align: center;
-        padding-top: 2rem;
+		padding-top: 2rem;
 	}
 }
 
@@ -800,6 +787,8 @@ footer span {
 	.contact-icons-wrapper a i:hover {
 		color: var(--middle-pink-1);
 		transform: translateY(-3px);
+		-webkit-transform: translateY(-3px);
+		-ms-transform: translateY(-3px);
 	}
 }
 
@@ -913,11 +902,10 @@ footer span {
 		font-size: 3rem;
 	}
 
-
-    .project-images img {
-        width: 85%;
-        height: 85%;
-    }
+	.project-images img {
+		width: 85%;
+		height: 85%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
