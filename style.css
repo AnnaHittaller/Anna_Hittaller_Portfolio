@@ -126,7 +126,7 @@ nav {
 
 /* ABOUT ME SECTION */
 
-/*
+/* animatied classes start */
 
 .hittaller span,
 .anna span {
@@ -153,7 +153,7 @@ nav {
   50% {color: hsl(352, 100%, 75%);}
 }
 
-*/
+
 
 .about {
 	display: flex;

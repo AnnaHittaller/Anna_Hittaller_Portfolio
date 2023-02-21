@@ -1,8 +1,10 @@
-$(".animated").on({
-  mouseenter() {
-    $(this).addClass("animated");
-  },
-  animationend() {
-    $(this).removeClass("animated");
-  },
+  $(document).ready(function(){
+    $(".animated").on({
+      mouseenter() {
+        $(this).addClass("animated");
+      },
+      animationend() {
+        $(this).removeClass("animated");
+      },
+    });
 });
