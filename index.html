@@ -18,11 +18,14 @@
 			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-			<script src="./animations.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="./animations.js"></script>
+		<script src="./observer.js"></script>
 		<title>Anna Hittaller portfolio</title>
 	</head>
 	<body>
+		<div class="cursor cursor-outer"></div>
+		<div class="cursor cursor-inner"></div>
 		<!-- HEADER SECTION -------------------------------->
 
 		<header>
@@ -34,29 +37,51 @@
 				</div>
 				<div class="menu">
 					<div class="menu-items">
-						<div class="menu-item">
-							<img src="./assets/Ellipse 1.png" alt="point" />
-							<a href="index.html#about">About me</a>
-						</div>
-						<div class="menu-item">
-							<img src="./assets/Ellipse 1.png" alt="point" />
-							<a href="index.html#skills">My skills</a>
-						</div>
-						<div class="menu-item">
-							<img src="./assets/Ellipse 1.png" alt="point" />
-							<a href="index.html#works">My works</a>
-						</div>
-						<div class="menu-item">
-							<img src="./assets/Ellipse 1.png" alt="point" />
-							<a href="index.html#contact">Contact me</a>
-						</div>
-						<button>Resume</button>
+						<!-- <div class="menu-item active"> -->
+						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
+						<a href="./index.html#about" class="menu-item active">About me</a>
+						<!-- </div> -->
+
+						<!-- <div class="menu-item"> -->
+						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
+						<a href="./index.html#skills" class="menu-item">My skills</a>
+						<!-- </div> -->
+
+						<!-- <div class="menu-item"> -->
+						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
+						<a href="./index.html#works" class="menu-item">My works</a>
+						<!-- </div> -->
+
+						<!-- <div class="menu-item"> -->
+						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
+						<a href="./index.html#contact" class="menu-item">Contact me</a>
+						<!-- </div> -->
+
+						<a href="#"><button>Resume</button></a>
 					</div>
 					<div class="hamburger">
-						<img src="./assets/hamburger.svg" alt="hamburger menu" />
+						<!-- <img src="./assets/hamburger.svg" alt="hamburger menu" /> -->
+						<div class="burger">
+							<div id="burger-bar-1"></div>
+							<div id="burger-bar-2"></div>
+							<div id="burger-bar-3"></div>
+						</div>
 					</div>
 				</div>
 			</nav>
+			<!-- mobile menu start --------------------->
+
+			<div class="mobile-menu">
+				<div class="mobile-menu-items">
+					<a href="./index.html#about" class="menu-item active test">About me</a>
+					<a href="./index.html#skills" class="menu-item test">My skills</a>
+					<a href="./index.html#works" class="menu-item test">My works</a>
+					<a href="./index.html#contact" class="menu-item test">Contact me</a>
+					<a href="#"><button>Resume</button></a>
+				</div>
+			</div>
+
+			<!-- mobile menu end --------------------->
 		</header>
 
 		<main>
@@ -87,7 +112,7 @@
 			</div>
 			<!-- vertical divs end -->
 
-			<section id="about">
+			<section id="about" class="about-section">
 				<div class="about-wrapper">
 					<div class="text-bubble">
 						<img src="./assets/text bubble.png" alt="speech bubble" />
@@ -389,7 +414,7 @@
 		<footer>
 			<span>Designed and built with </span
 			><img src="./assets/icons8-pixel-heart-25.png" alt="heart" />
-			<span> by Anna Hittaller © 2023 All rights reserved</span>
+			<span> by Anna Hittaller © 2023</span>
 		</footer>
 
 		<!-- JS SCRIPTS --------------------->
