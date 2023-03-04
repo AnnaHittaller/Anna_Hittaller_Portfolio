@@ -52,20 +52,17 @@
   $('.menu-item').click(function() {
     $('.menu-item').removeClass('active');
    // $(this).addClass('active');
-    $('.mobile-menu').removeClass('slide-in');
+    $('.menu').removeClass('visible');
     $('.hamburger').removeClass('open');
     $(this).addClass('active');
   });
 
 
 
-  // navbar active class toggle end *************//
+// navbar active class toggle end *************//
 
-    $('.hamburger').click(function() {
-    $('.mobile-menu').toggleClass('slide-in');
-    //$(this).addClass('active');
-  });
-  
+
+
 //navbar hide and slide code start -------------//
 
 var prevScroll = $(window).scrollTop();
@@ -81,7 +78,7 @@ $(window).on('scroll', function() {
    } else {
       if(currentScroll >= 100) {
         $('header').addClass('fadeout');
-        $('.mobile-menu').removeClass('slide-in');
+        $('.menu').removeClass('visible');
         $('.hamburger').removeClass('open');
       }
    }
@@ -93,6 +90,7 @@ $(window).on('scroll', function() {
 
   $(".hamburger").on('click', function(){
       $(this).toggleClass("open");
+      $('.menu').toggleClass('visible');
   });
 
 });

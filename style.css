@@ -185,13 +185,7 @@ a[href="./index.html#contact"]::before {
 
 /*  */
 
-/* 
-.menu-item img {
-	position: relative;
-	top: 1rem;
-	opacity: 0;
-	transition: 0.8s;
-} */
+
 
 .menu-item.active::before {
 	opacity: 1;
@@ -220,6 +214,7 @@ a[href="./index.html#contact"]::before {
 
 .hamburger {
 	display: none;
+	width: 46px;
 	position: relative;
 	z-index: 999;
 }
@@ -260,7 +255,6 @@ a[href="./index.html#contact"]::before {
 	transform: rotate(-45deg);
 	top: -12px;
 	margin-bottom: 0; 
-	/* will have to check if still good with no bottom margin */
 }
 
 .mobile-menu {
@@ -975,22 +969,54 @@ footer span {
 @media only screen and (max-width: 670px) {
 	nav {
 		flex-direction: row;
-		align-items: center;
-		gap: 2vw;
+		justify-content: space-between;
+		align-items: center; 
 		padding: 3rem 0 10vw 0;
+		transition:  0.8s ease;
 	}
+
+	.menu {
+		top: -100vh;
+		height: 0px;
+		display: flex;
+		opacity: 0;
+		justify-content: center;
+		align-items: center;
+		transition:  0.8s ease;
+	}
+
+	.menu.visible {
+		display: flex;
+		top: 0;
+		opacity: 1;
+		height: 100vh;
+	}
+
 
 	.menu-items {
-		display: none;
+		display: flex;
+		flex-direction: column;
 	}
 
-	.hamburger {
+	.hamburger, 
+	.logo {
 		display: block;
+		align-self: flex-start; 
+	}
+
+	.menu-items a {
+		color: var(--seethrough-pink);
+		font-size: 1.5rem;
+		margin: .5rem auto;
+	}
+
+	.menu-items button {
+		font-size: 1.5rem;
 	}
 
 	/*  mobile menu css-------------------------------- */
 
-	.mobile-menu {
+	/* .mobile-menu {
 		display: none;
 		justify-content: center;
 		align-items: center;
@@ -1000,11 +1026,6 @@ footer span {
 		width: 100%;
 		z-index: 20;
 		opacity: 0;
-		/* transform: translateX(100%); */
-		/* top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0; */
 		background-color: var(--dark);
 		transition: opacity 0.4s ease-out, top 0.8s ease;
 	}
@@ -1014,7 +1035,7 @@ footer span {
 		top: 0;
 		opacity: 1;
 		/* transform: translateX(0); */
-	}
+	/* }
 	.mobile-menu {
 		display: flex;
 		justify-content: center;
@@ -1036,7 +1057,7 @@ footer span {
 
 	.mobile-menu-items button {
 		font-size: 1.5rem;
-	}
+	} */ 
 
 	#about {
 		padding-top: 10rem;
