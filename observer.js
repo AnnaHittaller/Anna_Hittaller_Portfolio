@@ -6,14 +6,15 @@ window.onload = function() {
 const navCallback = (entries, observer) => {
    
 entries.forEach((entry) => {
-//     // verify the element is intersecting
+     // verify the element is intersecting
      if(entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-//       // remove old active class
+      
+       // remove old active class
       document.querySelector('.active').classList.remove('active');
      // document.querySelector('.mobile-menu-items a.active').classList.remove('active'); //????
-//       // get id of the intersecting section
+       // get id of the intersecting section
        var id = entry.target.getAttribute('id');
-//       // find matching link & add appropriate class
+       // find matching link & add appropriate class
        var newLink = document.querySelector(`[href="./index.html#${id}"]`).classList.add('active');
       // var newLink = document.querySelector(`.mobile-menu-items [href="./index.html#${id}"]`).classList.add('active'); //???
       

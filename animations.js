@@ -65,6 +65,13 @@
 
 //navbar hide and slide code start -------------//
 
+// if ($(".hamburger").hasClass("open")) {
+// 	$("body").css({
+// 		overflow: "hidden",
+// 		position: "absolute",
+// 	});
+// } 
+
 var prevScroll = $(window).scrollTop();
 
 $(window).on('scroll', function() {
