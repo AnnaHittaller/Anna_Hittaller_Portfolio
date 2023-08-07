@@ -9,7 +9,7 @@
 
 :root {
 	--brightpink: #ff2168;
-	--overlay: rgba(255, 33, 104, 0.3);
+	--overlay: rgba(117, 14, 47, 0.7);
 	--dark: #2d282a;
 	--seethrough-pink: rgba(255, 216, 228, 0.8);
 	--seethrough-pink-05: rgba(255, 216, 228, 0.5);
@@ -166,79 +166,78 @@ nav {
 
 /* language toggle checkbox*/
 .switch span {
-  position: absolute;
-  width: 50%;
-  font-weight: 800;
-  text-align: center;
-  pointer-events: none;
-  color: var(--seethrough-pink);
-  font-family: Comfortaa, cursive;
-  z-index: 20;
-  top: 5px;
-  left: 2px;
-  transition: 0.3s;
+	position: absolute;
+	width: 50%;
+	font-weight: 800;
+	text-align: center;
+	pointer-events: none;
+	color: var(--seethrough-pink);
+	font-family: Comfortaa, cursive;
+	z-index: 20;
+	top: 5px;
+	left: 2px;
+	transition: 0.3s;
 }
 
 .switch span:nth-of-type(2) {
-  left: 2.1rem;
+	left: 2.1rem;
 }
 
 .check-toggle {
-  visibility: hidden;
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  margin-left: -5000px;
+	visibility: hidden;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	margin-left: -5000px;
 }
 
 .check-toggle-label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  width: 75px;
-  height: 26px;
-  top: 1rem;
-  display: block;
-  border-radius: 5px;
-  border: 1px solid var(--seethrough-pink);
-  background-color: transparent;
-  transition: 0.3s;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	width: 75px;
+	height: 26px;
+	top: 1rem;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid var(--seethrough-pink);
+	background-color: transparent;
+	transition: 0.3s;
 }
 
 .check-toggle-label::after {
-  content: "";
-  width: 35px;
-  height: 20px;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  background-color: var(--brightpink);
-  border-radius: 3px;
-  transition: 0.3s;
+	content: "";
+	width: 35px;
+	height: 20px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color: var(--brightpink);
+	border-radius: 3px;
+	transition: 0.3s;
 }
 
 .check-toggle:checked + .check-toggle-label::after {
-  left: 71px;
-  transform: translateX(-100%);
+	left: 71px;
+	transform: translateX(-100%);
 }
 
 .check-toggle:checked + .check-toggle-label span:nth-of-type(1) {
-  color: var(--seethrough-pink-05);
+	color: var(--seethrough-pink-05);
 }
 
 .check-toggle + .check-toggle-label span:nth-of-type(2) {
-  color: var(--seethrough-pink-05);
+	color: var(--seethrough-pink-05);
 }
 
 .check-toggle:checked + .check-toggle-label span:nth-of-type(2) {
-  color: var(--seethrough-pink);
+	color: var(--seethrough-pink);
 }
-
 
 a[href="./index.html#about"]::before,
 a[href="./index.html#skills"]::before,
@@ -335,7 +334,7 @@ a[href="./index.html#contact"]::before {
 
 /* ABOUT ME SECTION */
 
-/* animatied classes start */
+/* animated classes start */
 
 .hittaller span,
 .anna span {
@@ -473,7 +472,7 @@ h2 {
 .about-wrapper > p {
 	color: var(--seethrough-pink);
 	font-size: 1.5rem;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	max-width: 1200px;
 	/* align-self: flex-start; */
 }
@@ -610,13 +609,16 @@ h2 {
 	flex-shrink: 0;
 	border-radius: 1rem;
 	background-color: var(--seethrough-pink-015);
-	transition: 0.8s;
 }
 
 .icon-background i {
 	color: var(--seethrough-pink-05);
 	font-size: 3.5rem;
-	transition: 0.5s ease;
+}
+
+.icon-background img {
+	opacity: 0.5;
+	height: 3.5rem;
 }
 
 /* PROJECT SECTION ------------------ */
@@ -666,6 +668,7 @@ h2 {
 	height: 100%;
 	object-fit: cover;
 	display: block;
+	object-position: top;
 }
 
 .overlay {
@@ -686,9 +689,10 @@ h2 {
 }
 
 .overlay p {
-	position: relative;
-	top: 45%;
-	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: var(--seethrough-pink);
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -771,7 +775,7 @@ h2 {
 	-ms-transform: translateY(-3px);
 }
 
-.works-wrapper p:last-child {
+.works-wrapper > p {
 	color: var(--seethrough-pink);
 	font-size: 1.5rem;
 	margin: 4rem 0 2rem 0;
@@ -781,7 +785,62 @@ h2 {
 }
 
 .works-wrapper a:last-child {
-	color: var(--brightpink)
+	color: var(--brightpink);
+}
+
+/* SMALL CARDS SECTION ********************/
+
+.small-cards {
+	display: flex;
+
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.small-card {
+	max-width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.small-card img {
+	width: 100%;
+}
+
+.small-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	text-align: center;
+	gap: 1rem;
+	padding: 3rem 1rem 1rem 1rem;
+	color: var(--seethrough-pink);
+	background-color: var(--overlay);
+	transition: 0.5s ease;
+	font-weight: 700;
+}
+
+.small-card .project-links a i {
+	font-size: 1.25rem;
+}
+
+.small-card:hover .small-overlay {
+	opacity: 0;
+}
+
+.small-card .project-links {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
 /* CONTACT SECTION ------------------- */
@@ -975,7 +1034,8 @@ footer span {
 		margin-top: 1.5rem;
 	}
 
-	.works-wrapper p:last-child, .contact p {
+	.works-wrapper p:last-child,
+	.contact p {
 		font-size: 1.25rem;
 	}
 
@@ -999,7 +1059,7 @@ footer span {
 }
 
 @media only screen and (max-width: 900px) {
-		nav {
+	nav {
 		flex-direction: column;
 		align-items: center;
 		gap: 5vw;
@@ -1013,8 +1073,7 @@ footer span {
 }
 
 @media only screen and (max-width: 768px) {
-
-	.menu-visible{
+	.menu-visible {
 		height: 100vh;
 	}
 
@@ -1034,7 +1093,7 @@ footer span {
 	}
 
 	a.menu-item {
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
 
 	.desktop-view {
@@ -1281,7 +1340,8 @@ footer span {
 		height: 70px;
 	}
 
-	.icon-background i {
+	.icon-background i,
+	.icon-background img {
 		font-size: 3rem;
 	}
 
@@ -1290,17 +1350,18 @@ footer span {
 		height: 85%;
 	}
 
-	.works-wrapper p:last-child, .contact p {
+	.works-wrapper p:last-child,
+	.contact p {
 		font-size: 1rem;
 	}
 
-	.works-wrapper p:last-child{
-		margin-top: 0;;
+	.works-wrapper p:last-child {
+		margin-top: 0;
 	}
 }
 
 @media only screen and (max-width: 400px) {
-	.menu-items a{
+	.menu-items a {
 		font-size: 1rem;
 	}
 
