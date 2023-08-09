@@ -209,9 +209,11 @@
 					</div>
 					<h2>
 						<span class="seethrough-pink">junior </span
-						><span class="brightpink">web developer...</span>
+						><span class="brightpink" data-i18n-key="webdev"
+							>web developer...</span
+						>
 					</h2>
-					<p data-i18n-key="once-upon">
+					<p data-i18n-key="about">
 						Once upon a time, an office worker googled “What is CSS?”, while
 						trying to set up a website for her cat sitting side job. Fast
 						forward to today, a few years later, armed with a solid foundation
@@ -219,7 +221,7 @@
 						never look back and to forge a successful career out of my passion:
 						coding. (I still like cats though.)
 					</p>
-					<p>
+					<p data-i18n-key="about-2">
 						I believe that the perfect web application not only functions
 						flawlessly but also leaves a lasting impression. Driven by my
 						enthusiasm for both technology and design, I am eager to use my
@@ -227,7 +229,7 @@
 						immersive online experiences that delight users and exceed client
 						expectations.
 					</p>
-					<p>
+					<p data-i18n-key="about-3">
 						I am currently seeking opportunities and looking to join a team
 						where I can further enhance my skills and grow professionally. If
 						you believe that I could be a valuable addition to your team, I
@@ -243,7 +245,10 @@
 					<div class="section-title-wrapper">
 						<h2 data-i18n-key="my-skills">My skills</h2>
 						<h3>
-							<span class="seethrough-pink">...and I</span> create things with:
+							<span class="seethrough-pink" data-i18n-key="and-I"
+								>...and I</span
+							>
+							<span data-i18n-key="create">create things with:</span>
 						</h3>
 					</div>
 
@@ -318,20 +323,22 @@
 			<section id="works" class="works-section">
 				<div class="works-wrapper">
 					<div class="section-title-wrapper">
-						<h2>My works</h2>
+						<h2 data-i18n-key="my-works">My works</h2>
 						<h3>
-							<span class="seethrough-pink">Some of</span> the things I've
-							built:
+							<span class="seethrough-pink" data-i18n-key="some">Some of</span>
+							<span data-i18n-key="things">the things I've built:</span>
 						</h3>
 					</div>
 
 					<div class="project-cards-wrapper">
 						<div class="project-card">
-							<a href="project1.html" class="project-thumbnail">
+							<a href="catspotter.html" class="project-thumbnail">
 								<img src="./assets/500.png" alt="" />
 								<div class="overlay">
 									<!--hidden on mobile-->
-									<p class="desktop-tablet-view">Read more</p>
+									<p class="desktop-tablet-view" data-i18n-key="read-more">
+										Read more
+									</p>
 								</div>
 							</a>
 
@@ -340,7 +347,7 @@
 								<div class="project-text">
 									<h4 class="mobile-view">Catspotter</h4>
 									<!--hidden on desktop/tablet-->
-									<p>
+									<p data-i18n-key="catspotter-summary">
 										A community web app to help lost cats get home.
 										<br />
 										With powerful visualization tools, infosheets, interactive
@@ -350,7 +357,7 @@
 										able to help finding lost cats quickly and to be the hero of
 										the day.
 									</p>
-									<p class="mobile-view">Read more</p>
+									<p class="mobile-view" data-i18n-key="read-more">Read more</p>
 									<!--hidden on desktop/tablet-->
 								</div>
 								<div class="project-tech">
@@ -378,7 +385,9 @@
 									src="https://github.com/AnnaHittaller/found-a-bird/raw/main/src/assets/screenshot_Found_a_bird.png"
 									alt="I found a bird" />
 								<div class="overlay">
-									<p class="desktop-tablet-view">Read more</p>
+									<p class="desktop-tablet-view" data-i18n-key="read-more">
+										Read more
+									</p>
 									<!--hidden on mobile-->
 								</div>
 							</a>
@@ -388,19 +397,21 @@
 								<div class="project-text">
 									<h4 class="mobile-view">Hey! I found a bird!</h4>
 									<!--hidden on desktop/tablet-->
-									<p>
+									<p data-i18n-key="bird-summary">
 										The app every nature lover needs: it helps you to decide
 										what to do, when finding a baby bird. Built in react, this
 										easy-to-use questionnaire uses conditional rendering based
 										on the user's answers.
 									</p>
-									<p class="mobile-view">Read more</p>
+									<p class="mobile-view" data-i18n-key="read-more">Read more</p>
 									<!--hidden on desktop/tablet-->
 								</div>
 								<div class="project-tech">
 									<span class="tech-stack-used">React</span>
 									<span class="tech-stack-used">API</span>
-									<span class="tech-stack-used">React libraries</span>
+									<span class="tech-stack-used" data-i18n-key="react-libraries"
+										>React libraries</span
+									>
 								</div>
 								<div class="project-links">
 									<a
@@ -419,7 +430,9 @@
 							<a href="#" class="project-thumbnail">
 								<img src="./assets/500.png" alt="" />
 								<div class="overlay">
-									<p class="desktop-tablet-view">Read more</p>
+									<p class="desktop-tablet-view" data-i18n-key="read-more">
+										Read more
+									</p>
 									<!--hidden on mobile-->
 								</div>
 							</a>
@@ -429,14 +442,14 @@
 								<div class="project-text">
 									<h4 class="mobile-view">Lorem ipsum</h4>
 									<!--hidden on desktop/tablet-->
-									<p>
+									<p data-i18n-key="project3-summary">
 										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 										Velit enim recusandae obcaecati, aspernatur laudantium
 										consequuntur eius quidem expedita, magnam minus incidunt
 										nostrum voluptas ad ipsam mollitia reprehenderit porro
 										quaerat esse!
 									</p>
-									<p class="mobile-view">Read more</p>
+									<p class="mobile-view" data-i18n-key="read-more">Read more</p>
 									<!--hidden on desktop/tablet-->
 								</div>
 								<div class="project-tech">
@@ -458,8 +471,11 @@
 
 					<div class="section-title-wrapper">
 						<h3>
-							<span class="seethrough-pink">Other</span> noteworthy
-							<span class="seethrough-pink">projects:</span>
+							<span class="seethrough-pink" data-i18n-key="other">Other</span>
+							<span data-i18n-key="noteworthy">noteworthy</span>
+							<span class="seethrough-pink" data-i18n-key="projects"
+								>projects:</span
+							>
 						</h3>
 					</div>
 					<div class="small-cards">
@@ -467,7 +483,7 @@
 							<img alt="" src="./assets/500.png" />
 							<div class="small-overlay">
 								<h3>Usagi's Kitchen</h3>
-								<p>
+								<p data-i18n-key="usagi-summary">
 									Don’t have any ideas what to cook? Ask the bunny! An app to
 									help me with randomized but filterable cooking ideas.
 								</p>
@@ -494,7 +510,7 @@
 							<img alt="" src="./assets/500.png" />
 							<div class="small-overlay">
 								<h3>Cooking Light</h3>
-								<p>
+								<p data-i18n-key="cooking-summary">
 									A collaborative cooking blog project, using headless CMS.
 									Logged in users can even add recipes to their saved
 									collection.
@@ -518,7 +534,7 @@
 							<img alt="" src="./assets/500.png" />
 							<div class="small-overlay">
 								<h3>What's my IP?</h3>
-								<p>
+								<p data-i18n-key="ip-summary">
 									A small, collaborative one-page app to show the user’s IP
 									address, along with their location on a map and some extra
 									infos about their country.
@@ -541,7 +557,9 @@
 						</div>
 					</div>
 					<p>
-						Check out all of my other projects on
+						<span data-i18n-key="check-out"
+							>Check out all of my other projects on</span
+						>
 						<a href="https://github.com/AnnaHittaller" target="_blank">GitHub</a
 						>.
 					</p>
@@ -551,16 +569,25 @@
 			<section id="contact" class="contact">
 				<div class="contact-wrapper">
 					<div class="section-title-wrapper">
-						<h2>Contact me</h2>
-						<h3><span class="seethrough-pink">Get</span> in touch:</h3>
+						<h2 data-i18n-key="contact-me">Contact me</h2>
+						<h3>
+							<span class="seethrough-pink" data-i18n-key="get">Get</span
+							><span data-i18n-key="touch"> in touch:</span>
+						</h3>
 					</div>
 
 					<p>
-						Let's have a chat or check out my
-						<a href="https://www.linkedin.com/in/anna-hittaller" target="_blank"
+						<span data-i18n-key="chat">Let's have a chat or check out my</span>
+
+						<a
+							href="https://www.linkedin.com/in/anna-hittaller"
+							target="_blank"
+							data-i18n-key="linkedin"
 							>Linkedin</a
 						>
-						profile if you would like to know more about me.
+						<span data-i18n-key="profile"
+							>profile if you would like to know more about me.</span
+						>
 					</p>
 
 					<div class="form-wrapper">
@@ -579,7 +606,7 @@
 										id="email"
 										type="email"
 										name="email"
-										placeholder="E-mail"
+										data-i18n-key="email"
 										required />
 								</label>
 							</div>
@@ -588,7 +615,7 @@
 									id="subject"
 									type="text"
 									name="subject"
-									placeholder="Subject" />
+									data-i18n-key="subject" />
 							</label>
 							<label for="message">
 								<textarea
@@ -596,10 +623,10 @@
 									id="message"
 									cols="50"
 									rows="15"
-									placeholder="Message"
+									data-i18n-key="message"
 									required></textarea>
 							</label>
-							<input type="submit" value="Send" />
+							<button type="submit" data-i18n-key="send">Send</button>
 						</form>
 					</div>
 
@@ -632,14 +659,14 @@
 		</main>
 
 		<footer>
-			<span>Built with </span
+			<span data-i18n-key="built-with">Built with </span
 			><img src="./assets/pixel-heart-25.png" alt="heart" />
-			<span> by Anna Hittaller © 2023</span>
+			<span data-i18n-key="by"> by Anna Hittaller © 2023</span>
 		</footer>
 
 		<!-- JS SCRIPTS --------------------->
+		<script src="./languageSwitcher.js"></script>
 		<script src="./animations.js"></script>
 		<script src="./observer.js"></script>
-		<script src="./languageSwitcher.js"></script>
 	</body>
 </html>

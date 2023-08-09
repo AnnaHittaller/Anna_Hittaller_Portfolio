@@ -27,7 +27,7 @@
 		<div class="cursor cursor-inner"></div>
 		<!-- HEADER SECTION -------------------------------->
 
-<header>
+		<header>
 			<nav>
 				<div class="logo">
 					<a href="index.html"
@@ -36,41 +36,80 @@
 				</div>
 				<div class="menu">
 					<div class="menu-items">
+						<div class="switch">
+							<input
+								data-i18n-switcher
+								type="checkbox"
+								id="lang-toggle"
+								class="locale-switcher check-toggle" />
+							<label for="lang-toggle" class="check-toggle-label">
+								<span class="en">EN</span>
+								<span class="de">DE</span>
+							</label>
+						</div>
 						<!-- <div class="menu-item active"> -->
 						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
-						<a href="./index.html#about" class="menu-item active">About me</a>
+						<a
+							href="./index.html#about"
+							class="menu-item active"
+							data-i18n-key="about-me"
+							>About me</a
+						>
 						<!-- </div> -->
 
 						<!-- <div class="menu-item"> -->
 						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
-						<a href="./index.html#skills" class="menu-item">My skills</a>
+						<a
+							href="./index.html#skills"
+							class="menu-item"
+							data-i18n-key="my-skills"
+							>My skills</a
+						>
 						<!-- </div> -->
 
 						<!-- <div class="menu-item"> -->
 						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
-						<a href="./index.html#works" class="menu-item">My works</a>
+						<a
+							href="./index.html#works"
+							class="menu-item"
+							data-i18n-key="my-works"
+							>My works</a
+						>
 						<!-- </div> -->
 
 						<!-- <div class="menu-item"> -->
 						<!-- <img src="./assets/Ellipse 1.png" alt="point" /> -->
-						<a href="./index.html#contact" class="menu-item">Contact me</a>
+						<a
+							href="./index.html#contact"
+							class="menu-item"
+							data-i18n-key="contact-me"
+							>Contact me</a
+						>
 						<!-- </div> -->
 
-						<a href="#"><button>Resume</button></a>
+						<a href="#"><button data-i18n-key="resume-btn">Resume</button></a>
 					</div>
-					<div class="hamburger">
-						<!-- <img src="./assets/hamburger.svg" alt="hamburger menu" /> -->
+
+					<!-- <div class="hamburger">
 						<div class="burger">
 							<div id="burger-bar-1"></div>
 							<div id="burger-bar-2"></div>
 							<div id="burger-bar-3"></div>
 						</div>
+					</div> -->
+				</div>
+
+				<div class="hamburger">
+					<div class="burger">
+						<div id="burger-bar-1"></div>
+						<div id="burger-bar-2"></div>
+						<div id="burger-bar-3"></div>
 					</div>
 				</div>
 			</nav>
 			<!-- mobile menu start --------------------->
 
-			<div class="mobile-menu">
+			<!-- <div class="mobile-menu">
 				<div class="mobile-menu-items">
 					<a href="./index.html#about" class="menu-item active">About me</a>
 					<a href="./index.html#skills" class="menu-item">My skills</a>
@@ -78,7 +117,7 @@
 					<a href="./index.html#contact" class="menu-item">Contact me</a>
 					<a href="#"><button>Resume</button></a>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- mobile menu end --------------------->
 		</header>
@@ -159,9 +198,14 @@
 		</main>
 
 		<footer>
-			<span>Designed and built with </span
-			><img src="./assets/icons8-pixel-heart-25.png" alt="heart" />
-			<span> by Anna Hittaller © 2023</span>
+			<span data-i18n-key="built-with">Built with </span
+			><img src="./assets/pixel-heart-25.png" alt="heart" />
+			<span data-i18n-key="by"> by Anna Hittaller © 2023</span>
 		</footer>
+
+		<!-- JS SCRIPTS --------------------->
+		<script src="./languageSwitcher.js"></script>
+		<script src="./animations.js"></script>
+		<script src="./observer.js"></script>
 	</body>
 </html>
