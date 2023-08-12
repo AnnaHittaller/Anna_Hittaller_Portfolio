@@ -7,7 +7,7 @@ const navCallback = (entries, observer) => {
    
 entries.forEach((entry) => {
      // verify the element is intersecting
-     if(entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+     if(entry.isIntersecting && entry.intersectionRatio >= 0.1) {
       
        // remove old active class
       document.querySelector('.active').classList.remove('active');
@@ -21,12 +21,11 @@ entries.forEach((entry) => {
      }
    });
 
-   //make a separate one for mobile menu items with rootmargin etc threshold 0
 }
 
 // // init the observer
  const options = {
-   threshold: 0.3,
+   threshold: 0.2,
    rootMargin: '0px 0px -30% 0px'
  }
 
