@@ -17,7 +17,7 @@
   "catspotter-summary": "A community web app to help lost cats get home.\nWith powerful visualization tools, infosheets, interactive maps and SVGs, data matching algorithm, adjustable location preferences and detailed filtering possibilities, this full-stack application has everything a user may need to be able to help finding lost cats quickly and to be the hero of the day.",
   "bird-summary": "The app every nature lover needs: it helps you to decide what to do, when finding a baby bird. Built in react, this easy-to-use questionnaire uses conditional rendering based on the user's answers.",
   "react-libraries": "React libraries",
-  "project3-summary": "LOREM IPSUM************************************",
+  "project3-summary": "A fullstack project to upload, share, and save recipes to the logged in user's own recipe book. Originally built with Contentful, but later turned to use my own RESTful API for user and recipe management.",
   "other": "Other",
   "noteworthy": " noteworthy ",
   "projects": "projects:",
