@@ -76,7 +76,9 @@
 							>Contact me</a
 						>
 
-						<a href="cv.html"><button data-i18n-key="resume-btn">Resume</button></a>
+						<a href="cv.html"
+							><button data-i18n-key="resume-btn">Resume</button></a
+						>
 					</div>
 				</div>
 
@@ -128,41 +130,128 @@
 						<h3>Cooking Light</h3>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-						quaerat ipsam ratione necessitatibus molestiae, blanditiis, dolorem
-						deserunt laborum hic reiciendis incidunt vel non itaque? Maxime
-						dolorem ea porro. Vero, doloremque.
+						Cooking Light is a full-stack web application that serves as a
+						digital recipe collection, allowing users to upload, save, and
+						explore recipes. The application provides a seamless experience for
+						culinary enthusiasts to share their favorite recipes and to create a
+						personalized collection. The app ensures a responsive design to
+						provide an optimal user experience across various devices and screen
+						sizes.
+					</p>
+					<p>
+						The project was first created collaboratively with Contentful as
+						headless CMS, and was later modified individually to practice
+						creating fullstack apps with routing endpoints and RESTful APIs with
+						the help of Express server and Node.
 					</p>
 					<div class="project-images">
 						<img src="./assets/500.png" alt="" />
 						<img src="./assets/500.png" alt="" />
 					</div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-						doloribus nisi sapiente fugit at obcaecati, perspiciatis tempora.
-						Facere, doloremque eaque dolor obcaecati ea enim blanditiis a,
-						laudantium illum fuga non.
-					</p>
-					<p class="brightpink">
-						While I was working on this, I improved my knowledge in the
-						following areas:
-					</p>
+					<h3 class="brightpink">Key features:</h3>
 					<ul>
-						<li>Lorem</li>
-						<li>Ipsum</li>
-						<li>dolor</li>
-						<li>Sit</li>
-						<li>Amet</li>
+						<li>
+							<strong class="brightpink">Recipe Management:</strong>
+							<p>
+								<u>CRUD operations:</u> Users can create, read, update, and
+								delete their recipes.
+							</p>
+							<p>
+								<u>Image upload:</u> Integrated image uploading for recipe
+								illustrations.
+							</p>
+							<p>
+								<u>Hero image carousel:</u> The homepage displays a hero section
+								with a dynamically rendered featured recipe carousel.
+							</p>
+							<p>
+								<u>Like functionality:</u> Users can like the individual
+								recipes, saving them into their own recipe book within the app,
+								only available for logged-in users.
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink">User Management:</strong>
+							<p>
+								<u>CRUD operations:</u> Users can register, update, and delete
+								their profiles. User data is saved to local storage to enable
+								saving recipes into their own recipe books.
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink">MongoDB Database:</strong>
+							<p>
+								<u>Data storage:</u> Utilized MongoDB to store user information,
+								recipes, and associated data.
+							</p>
+							<p>
+								<u>Mongoose Schema:</u> Designed data models using Mongoose for
+								consistent and organized database interactions.
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink">Express server:</strong>
+							<p>
+								<u>RESTful API:</u> Built a RESTful API using Express to handle
+								client-server communication.
+							</p>
+							<p>
+								<u>Endpoint routing:</u> Structured API routes for user and
+								recipe management.
+							</p>
+						</li>
 					</ul>
-					<p class="brightpink">Tech stack used:</p>
-					<div class="project-tech">
+					<h3 class="brightpink">Challenges & solutions:</h3>
+					<ul>
+						<li>
+							<strong>Image upload:</strong>
+							<span
+								>Efficiently handling image uploads for recipe illustrations is
+								a must when building a cooking website. I decided to employ the
+								Multer library to manage image uploads and storage.</span
+							>
+						</li>
+						<li>
+							<strong>Switching from headless CMS to own backend:</strong>
+							<span
+								>Recreating the endpoints in Express to keep the same
+								functionality and adding even more routes for image upload was
+								challenging. I kept the existing frontend and rewrote the
+								backend parts of the project to keep it running smooth.</span
+							>
+						</li>
+					</ul>
+					<h3 class="brightpink">Technologies used:</h3>
+
+					<div class="project-tech list">
 						<span class="tech-stack-used">HTML5</span>
 						<span class="tech-stack-used">CSS3</span>
-						<span class="tech-stack-used">JS</span>
+						<span class="tech-stack-used">JavaScript</span>
+						<span class="tech-stack-used">React</span>
+					</div>
+
+					<div class="project-tech list">
+						<span class="tech-stack-used">Node</span>
+						<span class="tech-stack-used">Express</span>
+					</div>
+
+					<div class="project-tech list">
+						<span class="tech-stack-used">MongoDB</span>
+						<span class="tech-stack-used">Mongoose</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="tech-stack-used">Git</span>
+						<span class="tech-stack-used">GitHub</span>
+						<span class="tech-stack-used">Multer</span>
 					</div>
 					<div class="project-links">
-						<a href=""><i class="fa-brands fa-github"></i></a>
-						<a href=""><i class="fa-brands fa-github"></i></a>
+						<a
+							href="https://github.com/AnnaHittaller/Cooking-Light"
+							target="_blank"
+							><i class="fa-brands fa-github"></i
+						></a>
+						<!-- <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
 					</div>
 					<a href="index.html#works"><button>Back to the overview</button></a>
 				</div>
