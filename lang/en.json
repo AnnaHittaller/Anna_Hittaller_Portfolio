@@ -76,10 +76,9 @@
   "ch2": "User authentication and data security:",
   "ch2-span": "Ensuring the security of user data and preventing unauthorized access. I implemented user registration and login functionality with secure password hashing. Utilized JSON Web Tokens (JWT) for user authentication and authorization.",
   "ch3": "Location-based notifications:",
-  "ch3-span": "Implementing location-based notifications for users within the vicinity of matching cat sightings. I utilized geolocation services and customizable area preferences to deliver accurate notifications to users.",
+  "ch3-span": "Implementing location-based notifications for users within the vicinity of matching cat sightings. I designed a user-friendly interface that makes users able to adjust and customize their area and notification preferences, while integrating backend logic to deliver tailored updates.",
   "ch4": "Map visualization performance:",
   "ch4-span": "Optimizing the performance of the interactive map to handle a growing volume of reported cat activities. I utilized Leaflet's clustering and marker optimization techniques to enhance map responsiveness and maintain a smooth user experience, as well as integrating different Leaflet plugins to further enhance the possibilities for location searching."
 
 
 }
-  
