@@ -148,10 +148,10 @@
 			<section class="project-page-section">
 				<div class="project-wrapper">
 					<div class="section-title-wrapper">
-						<h2>Project details</h2>
+						<h2 data-i18n-key="project-details">Project details</h2>
 						<h3>Cooking Light</h3>
 					</div>
-					<p>
+					<p data-i18n-key="p2-1">
 						Cooking Light is a full-stack web application that serves as a
 						digital recipe collection, allowing users to upload, save, and
 						explore recipes. The application provides a seamless experience for
@@ -160,7 +160,7 @@
 						provide an optimal user experience across various devices and screen
 						sizes.
 					</p>
-					<p>
+					<p data-i18n-key="p2-2">
 						The project was first created collaboratively with Contentful as
 						headless CMS, and was later modified individually to practice
 						creating fullstack apps with routing endpoints and RESTful APIs with
@@ -180,72 +180,108 @@
 							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot_cfct34.jpg"
 							alt="app screenshot" />
 					</div>
-					<h3 class="brightpink">Key features:</h3>
+					<h3 class="brightpink" data-i18n-key="features">Key features:</h3>
 					<ul>
 						<li>
-							<strong class="brightpink">Recipe Management:</strong>
+							<strong class="brightpink" data-i18n-key="f21-s"
+								>Recipe Management:</strong
+							>
 							<p>
-								<u>CRUD operations:</u> Users can create, read, update, and
-								delete their recipes.
+								<u data-i18n-key="f21-u">CRUD operations:</u>
+								<span data-i18n-key="f21-span">
+									Users can create, read, update, and delete their recipes.
+								</span>
 							</p>
 							<p>
-								<u>Image upload:</u> Integrated image uploading for recipe
-								illustrations.
+								<u data-i18n-key="f21-u1">Image upload:</u>
+								<span data-i18n-key="f21-span1">
+									Integrated image uploading for recipe illustrations.
+								</span>
 							</p>
 							<p>
-								<u>Hero image carousel:</u> The homepage displays a hero section
-								with a dynamically rendered featured recipe carousel.
+								<u data-i18n-key="f21-u2">Hero image carousel:</u>
+								<span data-i18n-key="f21-span2">
+									The homepage displays a hero section with a dynamically
+									rendered featured recipe carousel.
+								</span>
 							</p>
 							<p>
-								<u>Like functionality:</u> Users can like the individual
-								recipes, saving them into their own recipe book within the app,
-								only available for logged-in users.
-							</p>
-						</li>
-						<li>
-							<strong class="brightpink">User Management:</strong>
-							<p>
-								<u>CRUD operations:</u> Users can register, update, and delete
-								their profiles. User data is saved to local storage to enable
-								saving recipes into their own recipe books.
-							</p>
-						</li>
-						<li>
-							<strong class="brightpink">MongoDB Database:</strong>
-							<p>
-								<u>Data storage:</u> Utilized MongoDB to store user information,
-								recipes, and associated data.
-							</p>
-							<p>
-								<u>Mongoose Schema:</u> Designed data models using Mongoose for
-								consistent and organized database interactions.
+								<u data-i18n-key="f21-u3">Like functionality:</u>
+								<span data-i18n-key="f21-span3">
+									Users can like the individual recipes, saving them into their
+									own recipe book within the app, only available for logged-in
+									users.
+								</span>
 							</p>
 						</li>
 						<li>
-							<strong class="brightpink">Express server:</strong>
+							<strong class="brightpink" data-i18n-key="f22-s"
+								>User Management:</strong
+							>
 							<p>
-								<u>RESTful API:</u> Built a RESTful API using Express to handle
-								client-server communication.
+								<u data-i18n-key="f22-u">CRUD operations:</u>
+								<span data-i18n-key="f22-span">
+									Users can register, update, and delete their profiles. User
+									data is saved to local storage to enable saving recipes into
+									their own recipe books.
+								</span>
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink" data-i18n-key="f23-s"
+								>MongoDB Database:</strong
+							>
+							<p>
+								<u data-i18n-key="f23-u">Data storage:</u>
+								<span data-i18n-key="f23-span">
+									Utilized MongoDB to store user information, recipes, and
+									associated data.
+								</span>
 							</p>
 							<p>
-								<u>Endpoint routing:</u> Structured API routes for user and
-								recipe management.
+								<u data-i18n-key="f23-u1">Mongoose Schema:</u>
+								<span data-i18n-key="f23-span1">
+									Designed data models using Mongoose for consistent and
+									organized database interactions.
+								</span>
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink" data-i18n-key="f24-s"
+								>Express server:</strong
+							>
+							<p>
+								<u data-i18n-key="f24-u">RESTful API:</u>
+								<span data-i18n-key="f24-span">
+									Built a RESTful API using Express to handle client-server
+									communication.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f24-u1">Endpoint routing:</u>
+								<span data-i18n-key="f24-span1">
+									Structured API routes for user and recipe management.
+								</span>
 							</p>
 						</li>
 					</ul>
-					<h3 class="brightpink">Challenges & solutions:</h3>
+					<h3 class="brightpink" data-i18n-key="challenges">
+						Challenges & solutions:
+					</h3>
 					<ul>
 						<li>
-							<strong>Image upload:</strong>
-							<span
+							<strong data-i18n-key="ch21">Image upload:</strong>
+							<span data-i18n-key="ch21-span"
 								>Efficiently handling image uploads for recipe illustrations is
 								a must when building a cooking website. I decided to employ the
 								Multer library to manage image uploads and storage.</span
 							>
 						</li>
 						<li>
-							<strong>Switching from headless CMS to own backend:</strong>
-							<span
+							<strong data-i18n-key="ch22"
+								>Switching from headless CMS to own backend:</strong
+							>
+							<span data-i18n-key="ch22-span"
 								>Recreating the endpoints in Express to keep the same
 								functionality and adding even more routes for image upload was
 								challenging. I kept the existing frontend and rewrote the
@@ -253,8 +289,10 @@
 							>
 						</li>
 						<li>
-							<strong>Team communication & collaboration:</strong>
-							<span
+							<strong data-i18n-key="ch23"
+								>Team communication & collaboration:</strong
+							>
+							<span data-i18n-key="ch23-span"
 								>Managing effective communication within a geographically
 								distributed team. To overcome these difficulties, we implemented
 								regular video meetings, Discord channels and project management
@@ -272,7 +310,7 @@
 							>
 						</li>
 					</ul>
-					<h3 class="brightpink">Technologies used:</h3>
+					<h3 class="brightpink" data-i18n-key="tech">Technologies used:</h3>
 
 					<div class="project-tech list">
 						<span class="tech-stack-used">HTML5</span>
@@ -304,7 +342,9 @@
 						></a>
 						<!-- <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
 					</div>
-					<a href="index.html#works"><button>Back to the overview</button></a>
+					<a href="index.html#works"
+						><button data-i18n-key="back">Back to the overview</button></a
+					>
 				</div>
 			</section>
 		</main>
