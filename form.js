@@ -1,10 +1,13 @@
 $(document).ready(function () {
 	$("#contactForm").submit(function (event) {
 		event.preventDefault(); // Prevent default form submission behavior
-		$(this).get(0).submit(); // Submit the form using the default action
+
+		// Display a toast message
+		showToast("Message sent successfully", "success");
+		clearFormFields();
 	});
 
-	// Display a toast message **************** div needs to be added to html
+	// Display a toast message
 	function showToast(message, type) {
 		var toast = $('<div class="toast ' + type + '">' + message + "</div>");
 		$("#toastContainer").append(toast);
@@ -19,15 +22,6 @@ $(document).ready(function () {
 	function clearFormFields() {
 		$("#contactForm")[0].reset();
 	}
-
-	// Intercept the default form submission behavior
-	var form = $("#contactForm")[0];
-	form.addEventListener("submit", function (event) {
-		event.preventDefault(); // Prevent default form submission
-		form.removeEventListener("submit", arguments.callee); // Remove this listener
-		showToast("Form submitted successfully", "success");
-		clearFormFields();
-	});
 });
 
 // toast styling needs to be added

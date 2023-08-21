@@ -68,7 +68,9 @@ function translatePage() {
 function translateElement(element) {
 	const key = element.getAttribute("data-i18n-key");
 	const translation = translations[key];
-	element.innerHTML = translation;
+	if (element.innerHTML) {
+		element.innerHTML = translation;
+	}
 
 	//element.querySelectorAll("[data-i18n-key]").forEach(translateElement);
 }

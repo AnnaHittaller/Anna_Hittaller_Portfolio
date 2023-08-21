@@ -245,11 +245,18 @@
 							<span>MongoDB</span>
 						</div>
 
+						<div class="tech-icon mongodb-icon">
+							<div class="icon-background">
+								<p>ex</p>
+							</div>
+							<span>Express.js</span>
+						</div>
+
 						<div class="tech-icon node-icon">
 							<div class="icon-background">
 								<i class="fa-brands fa-node-js"></i>
 							</div>
-							<span>Node</span>
+							<span>Node.js</span>
 						</div>
 
 						<div class="tech-icon html-icon">
@@ -341,8 +348,10 @@
 									<span class="tech-stack-used">styled-components</span>
 								</div>
 								<div class="project-links">
-									<a href="https://github.com/AnnaHittaller/catspotter"
-										 target="_blank"><i class="fa-brands fa-github"></i
+									<a
+										href="https://github.com/AnnaHittaller/catspotter"
+										target="_blank"
+										><i class="fa-brands fa-github"></i
 									></a>
 									<!-- <a href=""
 										><i class="fa-solid fa-up-right-from-square"></i
@@ -352,7 +361,7 @@
 						</div>
 
 						<div class="project-card reverse">
-							<a href="found-a-bird.html" class="project-thumbnail" >
+							<a href="found-a-bird.html" class="project-thumbnail">
 								<img
 									src="https://github.com/AnnaHittaller/found-a-bird/raw/main/src/assets/screenshot_Found_a_bird.png"
 									alt="I found a bird" />
@@ -400,7 +409,9 @@
 
 						<div class="project-card">
 							<a href="cooking-light.html" class="project-thumbnail">
-								<img src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg" alt="app screenshot" />
+								<img
+									src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg"
+									alt="app screenshot" />
 								<div class="overlay">
 									<p class="desktop-tablet-view" data-i18n-key="read-more">
 										Read more
@@ -560,20 +571,22 @@
 
 					<p>
 						<span data-i18n-key="chat">Let's have a chat or check out my</span>
-
 						<a
 							href="https://www.linkedin.com/in/anna-hittaller"
 							target="_blank"
 							data-i18n-key="linkedin"
 							>LinkedIn</a
 						>
-						<span data-i18n-key="profile"
-							>profile if you would like to know more about me.</span
+						<span data-i18n-key="profile">
+							profile if you would like to know more about me.</span
 						>
 					</p>
 
 					<div class="form-wrapper">
-						<form action="https://formspree.io/f/xdoreyoa" method="POST" id="contactForm">
+						<form
+							action="https://formspree.io/f/xdoreyoa"
+							method="POST"
+							id="contactForm">
 							<div class="first-row">
 								<label for="name">
 									<input
@@ -608,9 +621,10 @@
 									data-i18n-key="message"
 									required></textarea>
 							</label>
+							<!-- <input type="text" name="_gotcha" style="display: none" /> -->
+							<div id="toastContainer">ghkhjkh</div>
 							<button type="submit" data-i18n-key="send">Send</button>
 						</form>
-						<div id="toastContainer"></div>
 					</div>
 
 					<div class="contact-icons-wrapper mobile-view">
@@ -649,6 +663,7 @@
 
 		<!-- JS SCRIPTS --------------------->
 		<script src="./languageSwitcher.js"></script>
+		<script src="./form.js"></script>
 		<script src="./animations.js"></script>
 		<script src="./observer.js"></script>
 	</body>

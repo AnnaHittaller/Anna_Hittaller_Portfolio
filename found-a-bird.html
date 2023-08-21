@@ -151,7 +151,7 @@
 						<h2 data-i18n-key="project-details">Project details</h2>
 						<h3>Hey! I found a bird!</h3>
 					</div>
-					<p>
+					<p data-i18n-key="p3-1">
 						'Hey! I found a bird!' is a delightful and user-friendly web
 						application, as well as an educational tool, built with React,
 						designed to assist users to make informed decisions when they
@@ -174,66 +174,74 @@
 					<h3 class="brightpink" data-i18n-key="features">Key features:</h3>
 					<ul>
 						<li>
-							<strong class="brightpink"
+							<strong class="brightpink" data-i18n-key="f31-s"
 								>Conditionally rendered questionnaire:</strong
 							>
 							<p>
-								<u>Interactive steps:</u> Users are guided through a series of
-								questions to identify the situation and condition of the baby
-								bird.
+								<u data-i18n-key="f31-u">Interactive steps:</u>
+								<span data-i18n-key="f31-span">
+									Users are guided through a series of questions to identify the
+									situation and condition of the baby bird.
+								</span>
 							</p>
 							<p>
-								<u>Customized instructions:</u> Based on user responses, the app
-								provides tailored instructions for appropriate actions.
-							</p>
-						</li>
-						<li>
-							<strong class="brightpink">User-friendly interface:</strong>
-							<p>
-								<u>Visual appeal:</u> Utilized a calming and inviting design
-								aesthetic to ensure a positive user experience.
-							</p>
-							<p>
-								<u>Responsive design:</u> Ensured that the app is accessible and
-								visually appealing across a range of devices and screen sizes.
+								<u data-i18n-key="f31-u1">Customized instructions:</u>
+								<span data-i18n-key="f31-span1">
+									Based on user responses, the app provides tailored
+									instructions for appropriate actions.
+								</span>
 							</p>
 						</li>
 						<li>
-							<strong class="brightpink">Useful & cheerful extras:</strong>
+							<strong class="brightpink" data-i18n-key="f32-s"
+								>User-friendly interface:</strong
+							>
 							<p>
-								<u>Randomized gallery:</u> Integrated the Pexels API to display
-								random bird photos, adding an element of delight to the user's
-								experience and enhancing the app's atmosphere.
+								<u data-i18n-key="f32-u">Visual appeal:</u>
+								<span data-i18n-key="f32-span">
+									Utilized a calming and inviting design aesthetic to ensure a
+									positive user experience.
+								</span>
 							</p>
 							<p>
-								<u>Birding links:</u> Compiled a curated selection of
-								informative links related to birding, bird species
-								identification, and bird rescue.
+								<u data-i18n-key="f32-u1">Responsive design:</u>
+								<span data-i18n-key="f32-span1">
+									Ensured that the app is accessible and visually appealing
+									across a range of devices and screen sizes.
+								</span>
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink" data-i18n-key="f33-s"
+								>Useful & cheerful extras:</strong
+							>
+							<p>
+								<u data-i18n-key="f33-u">Randomized gallery:</u>
+								<span data-i18n-key="f33-span">
+									Integrated the Pexels API to display random bird photos,
+									adding an element of delight to the user's experience and
+									enhancing the app's atmosphere.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f33-u1">Birding links:</u>
+								<span data-i18n-key="f33-span1">
+									Compiled a curated selection of informative links related to
+									birding, bird species identification, and bird rescue.
+								</span>
 							</p>
 						</li>
 					</ul>
-					<!-- <h3 class="brightpink">Tech stack used:</h3>
-					<ul>
-						<li>
-							<strong>Frontend:</strong>
-							<span>React, HTML5, CSS3</span>
-						</li>
-						<li>
-							<strong>API:</strong>
-							<u>
-								<a href="https://www.pexels.com/api/" target="_blank"
-									>Pexels Image API</a
-								>
-							</u>
-						</li>
-					</ul> -->
+
 					<h3 class="brightpink" data-i18n-key="challenges">
 						Challenges & solutions:
 					</h3>
 					<ul>
 						<li>
-							<strong>Design consistency:</strong>
-							<span
+							<strong class="brightpink" data-i18n-key="ch31"
+								>Design consistency:</strong
+							>
+							<span data-i18n-key="ch31-span"
 								>I had to ensure a consistent and engaging design throughout the
 								app on all types of devices. I created a design style guide and
 								adhered to predefined design patterns for a cohesive look and
@@ -241,8 +249,10 @@
 							>
 						</li>
 						<li>
-							<strong>Content curation:</strong>
-							<span
+							<strong class="brightpink" data-i18n-key="ch32"
+								>Content curation:</strong
+							>
+							<span data-i18n-key="ch32-span"
 								>I wanted to select relevant and useful birding links for the
 								app's users. I conducted research to identify reputable sources
 								and compiled a curated list of links that align with the app's
@@ -250,17 +260,21 @@
 							>
 						</li>
 						<li>
-							<strong>API integration & documentation reading:</strong>
-							<span
-								>the challenge was to incorporate a formerly unknown API
+							<strong class="brightpink" data-i18n-key="ch33"
+								>API integration & documentation reading:</strong
+							>
+							<span data-i18n-key="ch33-span"
+								>The challenge was to incorporate a formerly unknown API
 								seamlessly into the app. I studied the API documentation,
 								implemented fetch requests, and integrated error handling to
 								handle API responses.</span
 							>
 						</li>
 						<li>
-							<strong>Conditional rendering in React:</strong>
-							<span
+							<strong class="brightpink" data-i18n-key="ch34"
+								>Conditional rendering in React:</strong
+							>
+							<span data-i18n-key="ch34-span"
 								>In the app, dynamically rendering components based on user
 								inputs presented a challenge. The app required displaying
 								different content and instructions depending on the user's
@@ -270,20 +284,20 @@
 								through the following steps:</span
 							>
 							<ol>
-								<li>
+								<li data-i18n-key="li1">
 									Utilized React's useState hook to manage the current question
 									and user progress within the questionnaire.
 								</li>
-								<li>
+								<li data-i18n-key="li2">
 									Created a structured questionData array containing questions,
 									answer options, and associated navigation logic.
 								</li>
-								<li>
+								<li data-i18n-key="li3">
 									Implemented a function to handle user answers and dynamically
 									update the current question based on the selected answer's
 									nextQuestion reference.
 								</li>
-								<li>
+								<li data-i18n-key="li4">
 									Ensured that user responses trigger smooth transitions to the
 									next relevant question, enabling users to progress naturally
 									through the questionnaire, and to jump back any number of
