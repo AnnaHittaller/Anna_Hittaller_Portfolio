@@ -3,7 +3,7 @@ $(document).ready(function () {
 		event.preventDefault(); // Prevent default form submission behavior
 
 		// Display a toast message
-		showToast("Message sent successfully", "success");
+		showToast("Thank you, your message was sent successfully!", "success");
 		clearFormFields();
 	});
 
@@ -24,5 +24,4 @@ $(document).ready(function () {
 	}
 });
 
-// toast styling needs to be added
-// form.js script needs to be added to home page html *****************
+

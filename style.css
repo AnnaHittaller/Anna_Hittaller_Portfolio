@@ -563,6 +563,7 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	padding: 3rem 0 5rem 0;
+	text-align: center;
 }
 
 .section-title-wrapper h3 {
@@ -700,7 +701,7 @@ h2 {
 }
 
 .project-description {
-	width: 50%;
+	width: 60%;
 	height: 25vw;
 	min-height: 400px;
 	display: flex;
@@ -738,7 +739,7 @@ h2 {
 }
 
 .project-text p:last-child {
-	color: var(--seethrough-pink);
+	color: var(--brightpink);
 	font-size: 1.5rem;
 	font-weight: bold;
 }
@@ -749,9 +750,10 @@ h2 {
 
 .project-tech {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 .tech-stack-used {
@@ -760,6 +762,7 @@ h2 {
 	background-color: var(--seethrough-pink-015);
 	border: 1px solid var(--middle-pink-1);
 	padding: 0.5rem;
+	white-space: nowrap;
 }
 
 .project-links a i {
@@ -781,6 +784,7 @@ h2 {
 	font-size: 1.5rem;
 	margin: 4rem 0 2rem 0;
 	max-width: 1200px;
+	width: 80%;
 	text-align: center;
 	padding: 0 1rem;
 }
@@ -793,7 +797,6 @@ h2 {
 
 .small-cards {
 	display: flex;
-
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
@@ -942,7 +945,7 @@ input[type="submit"]:hover {
 	background-color: var(--seethrough-pink-01);
 }
 
-.toast .success {
+.toast {
 	color: var(--seethrough-pink);
 	font-weight: bold;
 }
@@ -1011,16 +1014,20 @@ footer span {
 }
 
 .project-images {
-	width: 100%;
-	display: grid;
+	width: 1200px;
+	/* display: grid; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 	padding: 2rem 0;
 }
 
 .project-images img {
-	height: auto;
-	width: 100%;
+	width: auto;
+	max-height: 300px;
+	max-width: 90%;
 	object-fit: cover;
 }
 
@@ -1075,14 +1082,30 @@ footer span {
 		width: 85%;
 	}
 
-	/* .project-images img {
-		height: 300px;
-		width: 400px;
-		object-fit: cover;
-	} */
+	.project-description {
+		width: 70%;
+	}
+
+	.project-text {
+		padding: 1rem;
+		font-size: 0.85rem;
+	}
+
+	.project-title,
+	.project-links a i {
+		font-size: 1.5rem;
+	}
+
+	.tech-stack-used {
+		font-size: 0.85rem;
+	}
 
 	.project-page-section {
 		padding-top: 13vw;
+	}
+
+	.project-cards-wrapper {
+		gap: 5rem;
 	}
 }
 
@@ -1297,7 +1320,7 @@ footer span {
 	}
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 565px) {
 	.project-cards-wrapper {
 		width: 85%;
 		gap: 0;
