@@ -18,11 +18,24 @@ $(document).ready(function () {
 			$(".cursor-outer").css({
 				top: e.clientY,
 				left: e.clientX,
+				opacity: 1,
 			});
 			$(".cursor-inner").css({
 				top: e.clientY + "px",
 				left: e.clientX + "px",
+				opacity: 1,
 			});
+		});
+
+		$(window).on({
+			mouseleave() {
+				$(".cursor-outer").css({
+					opacity: 0,
+				});
+				$(".cursor-inner").css({
+					opacity: 0,
+				});
+			},
 		});
 
 		$("[href], [type=submit], .hamburger").on({
@@ -44,7 +57,7 @@ $(document).ready(function () {
 		});
 	}
 
-	setupCustomCursor()
+	setupCustomCursor();
 
 	// custom mouse code end --------- //
 
