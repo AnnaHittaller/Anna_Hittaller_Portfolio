@@ -58,18 +58,7 @@
 				</div>
 				<div class="menu">
 					<div class="menu-items">
-						<div class="switch">
-							<input
-								data-i18n-switcher
-								type="checkbox"
-								id="lang-toggle"
-								class="locale-switcher check-toggle" />
-							<label for="lang-toggle" class="check-toggle-label">
-								<span class="en">EN</span>
-								<span class="de">DE</span>
-							</label>
-						</div>
-
+						
 						<a
 							href="./index.html#about"
 							class="menu-item active"
@@ -85,22 +74,34 @@
 						>
 
 						<a
-							href="./index.html#works"
+						href="./index.html#works"
 							class="menu-item"
 							data-i18n-key="my-works"
 							>My works</a
-						>
+							>
 
 						<a
 							href="./index.html#contact"
 							class="menu-item"
 							data-i18n-key="contact-me"
 							>Contact me</a
-						>
+							>
+							
+						<div class="switch">
+							<input
+								data-i18n-switcher
+								type="checkbox"
+								id="lang-toggle"
+								class="locale-switcher check-toggle" />
+							<label for="lang-toggle" class="check-toggle-label">
+								<span class="en">EN</span>
+								<span class="de">DE</span>
+							</label>
+						</div>
 
-						<a href="cv.html"
+						<!-- <a href="cv.html"
 							><button data-i18n-key="resume-btn">Resume</button></a
-						>
+						> -->
 					</div>
 				</div>
 
@@ -155,7 +156,7 @@
 			<!-- vertical divs end -->
 
 			<section class="project-page-section">
-				<div class="project-wrapper">
+				<di class="project-wrapper">
 					<div class="section-title-wrapper">
 						<h2 data-i18n-key="project-details">Project details</h2>
 						<h3>Catspotter</h3>
@@ -303,7 +304,7 @@
 						plans for continuous development and feature enhancement. Upcoming
 						changes include refining existing functionalities, optimizing and
 						refactoring codebase, and introducing new features to further
-						amplify the app's impact. Deployment link coming soon!
+						amplify the app's impact. 
 					</p>
 					<h3 class="brightpink" data-i18n-key="challenges">
 						Challenges & solutions:
@@ -380,8 +381,11 @@
 							target="_blank"
 							><i class="fa-brands fa-github"></i
 						></a>
-						<!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+						<a href="https://catspotter-client.vercel.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
 					</div>
+					
+						<p data-i18n-key="demo">You can find the guest login credentials for checking out the demo app on GitHub!</p>
+					
 					<a href="index.html#works"
 						><button data-i18n-key="back">Back to the overview</button></a
 					>

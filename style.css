@@ -1009,6 +1009,10 @@ footer span {
 	width: 85%;
 }
 
+.project-wrapper p[data-i18n-key="demo"] {
+	text-align: center;
+}
+
 .project-wrapper .brightpink {
 	text-align: center;
 }

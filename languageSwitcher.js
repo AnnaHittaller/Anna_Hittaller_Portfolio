@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	bindLocaleSwitcher(defaultLocale);
 });
 
-// Whenever the user selects a new locale, we
+// Whenever the user selects a new locale,
 // load the locale's translations and update
 // the page
 function bindLocaleSwitcher(initialValue) {
@@ -90,7 +90,7 @@ function setPlaceholders(locale) {
 			subject: "Betreff",
 			message: "Nachricht",
 		},
-		// Add more translations as needed
+		
 	};
 
 	document.querySelectorAll("[data-i18n-key]").forEach((element) => {

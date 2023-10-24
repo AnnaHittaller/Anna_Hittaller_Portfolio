@@ -33,8 +33,6 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<!-- <script src="./animations.js"></script>
-		<script src="./observer.js"></script> -->
 		<title>Anna Hittaller portfolio</title>
 	</head>
 	<body>
@@ -60,20 +58,8 @@
 				</div>
 				<div class="menu">
 					<div class="menu-items">
-						<div class="switch">
-							<input
-								data-i18n-switcher
-								type="checkbox"
-								id="lang-toggle"
-								class="locale-switcher check-toggle" />
-							<label for="lang-toggle" class="check-toggle-label">
-								<span class="en">EN</span>
-								<span class="de">DE</span>
-							</label>
-						</div>
-
 						<a
-							href="./index.html#about"
+						href="./index.html#about"
 							class="menu-item active"
 							data-i18n-key="about-me"
 							>About me</a
@@ -91,7 +77,7 @@
 							class="menu-item"
 							data-i18n-key="my-works"
 							>My works</a
-						>
+							>
 
 						<a
 							href="./index.html#contact"
@@ -99,10 +85,22 @@
 							data-i18n-key="contact-me"
 							>Contact me</a
 						>
+						
+						<div class="switch">
+							<input
+								data-i18n-switcher
+								type="checkbox"
+								id="lang-toggle"
+								class="locale-switcher check-toggle" />
+							<label for="lang-toggle" class="check-toggle-label">
+								<span class="en">EN</span>
+								<span class="de">DE</span>
+							</label>
+						</div>
 
-						<a href="cv.html" target="_blank"
+						<!-- <a href="cv.html" target="_blank"
 							><button data-i18n-key="resume-btn">Resume</button></a
-						>
+						> -->
 					</div>
 				</div>
 
@@ -118,7 +116,7 @@
 
 		<main>
 			<!-- ABOUT SECTION -------------------------------->
-			<!-- vertical divs -->
+			<!-- vertical divs with contact info -->
 			<div class="left desktop-view">
 				<ul>
 					<li>
@@ -187,7 +185,7 @@
 						<span class="code">&lt;/h1&gt;</span>
 					</div>
 					<h2>
-						<span class="seethrough-pink">junior </span
+						<span class="seethrough-pink" data-i18n-key="frontend">frontend </span
 						><span class="brightpink" data-i18n-key="webdev"
 							>web developer...</span
 						>
@@ -198,7 +196,7 @@
 						forward to today, a few years later, armed with a solid foundation
 						in web development and a relentless drive to learn, I am ready to
 						never look back and to forge a successful career out of my passion:
-						coding. (I still like cats though.)
+						coding. (I still like cats very much though.)
 					</p>
 					<p data-i18n-key="about-2">
 						I believe that the perfect web application not only functions
@@ -214,9 +212,9 @@
 						you believe that I could be a valuable addition to your team, I
 						would love to hear from you!
 					</p>
-					<a href="cv.html" target="_blank"
+					<!-- <a href="cv.html" target="_blank"
 						><button data-i18n-key="resume-btn">Resume</button></a
-					>
+					> -->
 				</div>
 			</section>
 
@@ -370,9 +368,9 @@
 										target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
-									<!-- <a href=""
+									<a href="https://catspotter-client.vercel.app"
 										><i class="fa-solid fa-up-right-from-square"></i
-									></a> -->
+									></a>
 								</div>
 							</div>
 						</div>
@@ -410,7 +408,7 @@
 								</div>
 								<div class="project-tech">
 									<span class="tech-stack-used">React</span>
-									<span class="tech-stack-used">API</span>
+									<span class="tech-stack-used">REST API</span>
 									<span class="tech-stack-used" data-i18n-key="react-libraries"
 										>React libraries</span
 									>
@@ -558,7 +556,7 @@
 									infos about their country.
 								</p>
 								<div class="project-tech">
-									<span class="tech-stack-used">API</span>
+									<span class="tech-stack-used">REST API</span>
 									<span class="tech-stack-used">Leaflet</span>
 								</div>
 							</div>

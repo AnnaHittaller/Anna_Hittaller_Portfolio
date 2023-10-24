@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 	// bouncing letter animation end *********//
 
-	// custom mouse code start --------- //
+	// custom cursor code start --------- //
 	function setupCustomCursor() {
 		$(window).mousemove(function (e) {
 			$(".cursor-outer").css({
@@ -59,7 +59,7 @@ $(document).ready(function () {
 
 	setupCustomCursor();
 
-	// custom mouse code end --------- //
+	// custom cursor code end --------- //
 
 	// navbar active class toggle start ************* //
 
@@ -83,23 +83,51 @@ $(document).ready(function () {
 	// }
 
 	var prevScroll = $(window).scrollTop();
+	var timeout;
+
+	function fadeOutHeader() {
+		$("header").addClass("fadeout");
+		$(".menu").removeClass("visible");
+		$(".hamburger").removeClass("open");
+	}
 
 	$(window).on("scroll", function () {
 		var currentScroll = $(window).scrollTop();
 		if (currentScroll == 0) {
 			$("header").removeClass("box-shadow");
+			clearTimeout(timeout);
 		} else if (prevScroll > currentScroll) {
 			$("header").removeClass("fadeout");
 			$("header").addClass("box-shadow");
 			//$('.mobile-menu').removeClass('slide-in');
 		} else {
 			if (currentScroll >= 100) {
-				$("header").addClass("fadeout");
-				$(".menu").removeClass("visible");
-				$(".hamburger").removeClass("open");
+				fadeOutHeader();
 			}
 		}
 		prevScroll = currentScroll;
+
+		// Clear the previous timeout (if any)
+		clearTimeout(timeout);
+
+		// Set a new timeout
+		if (currentScroll > 0) {
+			timeout = setTimeout(function () {
+				fadeOutHeader();
+			}, 4000);
+		}
+	});
+
+	// Add an event listener to prevent fadeout when mouse is over header
+	$("header").on("mouseenter", function () {
+		clearTimeout(timeout);
+	});
+
+	// Add an event listener to resume fadeout when mouse leaves header
+	$("header").on("mouseleave", function () {
+		timeout = setTimeout(function () {
+			fadeOutHeader();
+		}, 4000); // 2000 milliseconds (2 seconds)
 	});
 
 	//navbar hide and slide code end -------------//
