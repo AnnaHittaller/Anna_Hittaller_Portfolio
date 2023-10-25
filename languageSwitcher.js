@@ -35,7 +35,6 @@ function bindLocaleSwitcher(initialValue) {
 		// Set the locale to the selected option[value]
 		localStorage.setItem("selectedLanguage", locale === "en" ? "de" : "en");
 		setLocale(locale === "en" ? "de" : "en");
-		
 	};
 }
 
@@ -48,7 +47,7 @@ async function setLocale(newLocale) {
 	translations = newTranslations;
 	translatePage();
 	setPlaceholders(newLocale);
-	changeCV(newLocale);
+	//changeCV(newLocale);
 }
 // Retrieve translations JSON object for the given
 // locale over the network
@@ -90,7 +89,6 @@ function setPlaceholders(locale) {
 			subject: "Betreff",
 			message: "Nachricht",
 		},
-		
 	};
 
 	document.querySelectorAll("[data-i18n-key]").forEach((element) => {
@@ -102,19 +100,17 @@ function setPlaceholders(locale) {
 	});
 }
 
-function changeCV(locale) {
-	const englishCV = document.getElementById("english-cv")
-	const germanCV = document.getElementById("german-cv");
+// function changeCV(locale) {
+// 	const englishCV = document.getElementById("english-cv")
+// 	const germanCV = document.getElementById("german-cv");
 
-	console.log("changeCV", locale)
+// 	console.log("changeCV", locale)
 
-	if(locale === "en") {
-		germanCV.classList.add("hidden")
-		englishCV.classList.remove("hidden")
-	} else if (locale === "de") {
-		englishCV.classList.add("hidden");
-		germanCV.classList.remove("hidden");
-	}
-}
-
-
+// 	if(locale === "en") {
+// 		germanCV.classList.add("hidden")
+// 		englishCV.classList.remove("hidden")
+// 	} else if (locale === "de") {
+// 		englishCV.classList.add("hidden");
+// 		germanCV.classList.remove("hidden");
+// 	}
+// }
