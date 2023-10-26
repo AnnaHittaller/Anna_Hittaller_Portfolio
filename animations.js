@@ -38,7 +38,7 @@ $(document).ready(function () {
 			},
 		});
 
-		$("[href], [type=submit], .hamburger, .slide, .fa-times").on({
+		$("[href], [type=submit], .hamburger, .slide, .fa-times, .image").on({
 			mouseenter() {
 				$(".cursor-outer").addClass("cursor-hover");
 			},
