@@ -111,11 +111,11 @@ $(document).ready(function () {
 		clearTimeout(timeout);
 
 		// Set a new timeout
-		if (currentScroll > 0) {
-			timeout = setTimeout(function () {
-				fadeOutHeader();
-			}, 4000);
-		}
+		// if (currentScroll > 0 ) {
+		// 	timeout = setTimeout(function () {
+		// 		fadeOutHeader();
+		// 	}, 4000);
+		// }
 	});
 
 	// Add an event listener to prevent fadeout when mouse is over header
@@ -125,9 +125,11 @@ $(document).ready(function () {
 
 	// Add an event listener to resume fadeout when mouse leaves header
 	$("header").on("mouseleave", function () {
-		timeout = setTimeout(function () {
-			fadeOutHeader();
-		}, 4000); // 2000 milliseconds (2 seconds)
+		if ($(window).scrollTop() != 0) {
+			timeout = setTimeout(function () {
+				fadeOutHeader();
+			}, 4000);
+		}
 	});
 
 	//navbar hide and slide code end -------------//

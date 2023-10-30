@@ -63,6 +63,29 @@ window.onload = () => {
 					closeGallery();
 				}
 			});
+
+			//keyboard control
+
+			window.onkeydown = (e) => {
+				//console.log(e, e.code);
+				switch (e.code) {
+					case "Escape":
+						closeGallery();
+						break;
+					case "ArrowLeft":
+						if (prevBtn.style.display === "block") prevBtn.onclick();
+						break;
+					case "ArrowRight":
+						if (nextBtn.style.display === "block") nextBtn.onclick();
+						break;
+					case "default":
+						break;
+				}
+			};
+		};
+
+		gallery[i].onkeydown = (e) => {
+			if (e.code === "Enter") gallery[i].onclick();
 		};
 	}
 };

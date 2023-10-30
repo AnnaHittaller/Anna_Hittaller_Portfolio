@@ -1378,6 +1378,13 @@ footer span {
 		transition: 0.8s ease;
 	}
 
+	.no-scroll {
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+	}
+
 	.menu {
 		top: -100vh;
 		height: 0px;
