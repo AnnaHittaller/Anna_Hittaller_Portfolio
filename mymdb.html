@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- May have to adjust it to DE -->
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-5M5S674");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" type="image/x-icon" href="./assets/navicon.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<title>Anna Hittaller portfolio</title>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-5M5S674"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<div class="cursor cursor-outer"></div>
+		<div class="cursor cursor-inner"></div>
+		<!-- HEADER SECTION -------------------------------->
+
+		<header>
+			<nav>
+				<div class="logo">
+					<a href="index.html"
+						><img src="./assets/logo.svg" alt="Hittaller Anna monogram"
+					/></a>
+				</div>
+				<div class="menu">
+					<div class="menu-items">
+						<a
+							href="./index.html#about"
+							class="menu-item active"
+							data-i18n-key="about-me"
+							>About me</a
+						>
+
+						<a
+							href="./index.html#skills"
+							class="menu-item"
+							data-i18n-key="my-skills"
+							>My skills</a
+						>
+
+						<a
+							href="./index.html#works"
+							class="menu-item"
+							data-i18n-key="my-works"
+							>My works</a
+						>
+
+						<a
+							href="./index.html#contact"
+							class="menu-item"
+							data-i18n-key="contact-me"
+							>Contact me</a
+						>
+
+						<div class="switch">
+							<input
+								data-i18n-switcher
+								type="checkbox"
+								id="lang-toggle"
+								class="locale-switcher check-toggle" />
+							<label for="lang-toggle" class="check-toggle-label">
+								<span class="en">EN</span>
+								<span class="de">DE</span>
+							</label>
+						</div>
+
+						<!-- <a href="cv.html" target="_blank"
+							><button data-i18n-key="resume-btn">Resume</button></a
+						> -->
+					</div>
+				</div>
+
+				<div class="hamburger">
+					<div class="burger">
+						<div id="burger-bar-1"></div>
+						<div id="burger-bar-2"></div>
+						<div id="burger-bar-3"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- vertical divs -->
+			<div class="left desktop-view">
+				<ul>
+					<li>
+						<a
+							href="https://github.com/AnnaHittaller"
+							aria-label="GitHub"
+							target="_blank"
+							title="GitHub"
+							><i class="fa-brands fa-github"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://discord.com/users/773647183990751265"
+							aria-label="Discord"
+							target="_blank"
+							title="Discord"
+							><i class="fa-brands fa-discord"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/anna-hittaller"
+							aria-label="Linkedin"
+							target="_blank"
+							title="LinkedIn"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+			<div class="right desktop-view">
+				<a href="mailto:hittaller.anna@gmail.com" title="Gmail"
+					>hittaller.anna@gmail.com</a
+				>
+			</div>
+			<!-- vertical divs end -->
+
+			<section class="project-page-section">
+				<div class="project-wrapper">
+					<div class="section-title-wrapper">
+						<h2 data-i18n-key="project-details">Project details</h2>
+						<h3>Cooking Light</h3>
+					</div>
+					<p data-i18n-key="p2-1">
+						Cooking Light is a full-stack web application that serves as a
+						digital recipe collection, allowing users to upload, save, and
+						explore recipes. The application provides a seamless experience for
+						culinary enthusiasts to share their favorite recipes and to create a
+						personalized collection. The app provides an optimal user experience
+						across various devices and screen sizes thanks to a responsive
+						design.
+					</p>
+					<p data-i18n-key="p2-2">
+						The project was first created collaboratively with Contentful as
+						headless CMS, and was later modified individually to practice
+						creating fullstack apps with routing endpoints and RESTful APIs with
+						the help of Express server and Node.
+					</p>
+					<!-- <div class="project-images">
+						<img
+							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot3_zvaz7m.jpg"
+							alt="app screenshot" />
+						<img
+							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg"
+							alt="app screenshot" />
+						<img
+							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot4_qtqxaj.jpg"
+							alt="app screenshot" />
+						<img
+							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot_cfct34.jpg"
+							alt="app screenshot" />
+					</div> -->
+
+					<div class="wrapper">
+						<div class="gallery" tabindex="0">
+							<div class="image">
+								<span
+									><img tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot3_zvaz7m.jpg"
+										alt="app screenshot"
+								/></span>
+							</div>
+							<div class="image">
+								<span
+									><img tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg"
+										alt="app screenshot"
+								/></span>
+							</div>
+							<div class="image">
+								<span
+									><img tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot4_qtqxaj.jpg"
+										alt="app screenshot"
+								/></span>
+							</div>
+							<div class="image">
+								<span
+									><img tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot_cfct34.jpg"
+										alt="app screenshot"
+								/></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="preview-box">
+						<div class="close"><span class="icon fas fa-times"></span></div>
+						<div class="img-box">
+							<div class="slide prev">
+								<i class="fas fa-angle-left"></i>
+							</div>
+							<div class="slide next">
+								<i class="fas fa-angle-right"></i>
+							</div>
+							<img src="" alt="" />
+						</div>
+					</div>
+					<div class="shadow"></div>
+					<h3 class="brightpink" data-i18n-key="features">Key features:</h3>
+					<ul>
+						<li>
+							<strong class="brightpink" data-i18n-key="f21-s"
+								>Recipe Management:</strong
+							>
+							<p>
+								<u data-i18n-key="f21-u">CRUD operations:</u>
+								<span data-i18n-key="f21-span">
+									Users can create, read, update, and delete their recipes.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f21-u1">Image upload:</u>
+								<span data-i18n-key="f21-span1">
+									Integrated image uploading for recipe illustrations.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f21-u2">Hero image carousel:</u>
+								<span data-i18n-key="f21-span2">
+									The homepage displays a hero section with a dynamically
+									rendered featured recipe carousel.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f21-u3">Like functionality:</u>
+								<span data-i18n-key="f21-span3">
+									Users can like the individual recipes, saving them into their
+									own recipe book within the app, only available for logged-in
+									users.
+								</span>
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink" data-i18n-key="f22-s"
+								>User Management:</strong
+							>
+							<p>
+								<u data-i18n-key="f22-u">CRUD operations:</u>
+								<span data-i18n-key="f22-span">
+									The API is written so that users can register, update, and
+									delete their profiles. In the present state of the project it
+									can be tested with guest credentials, until all-round data
+									safety measurements will be applied in the upcoming version.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f22-u1">Local storage:</u>
+								<span data-i18n-key="f22-span1">
+									User data is saved to local storage to enable saving recipes
+									into their own recipe books.
+								</span>
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink" data-i18n-key="f23-s"
+								>MongoDB Database:</strong
+							>
+							<p>
+								<u data-i18n-key="f23-u">Data storage:</u>
+								<span data-i18n-key="f23-span">
+									Utilized MongoDB to store user information, recipes, and
+									associated data.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f23-u1">Mongoose Schema:</u>
+								<span data-i18n-key="f23-span1">
+									Designed data models using Mongoose for consistent and
+									organized database interactions.
+								</span>
+							</p>
+						</li>
+						<li>
+							<strong class="brightpink" data-i18n-key="f24-s"
+								>Express server:</strong
+							>
+							<p>
+								<u data-i18n-key="f24-u">RESTful API:</u>
+								<span data-i18n-key="f24-span">
+									Built a RESTful API using Express to handle client-server
+									communication.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f24-u1">Endpoint routing:</u>
+								<span data-i18n-key="f24-span1">
+									Structured API routes for user and recipe management.
+								</span>
+							</p>
+						</li>
+					</ul>
+					<h3 class="brightpink" data-i18n-key="challenges">
+						Challenges & solutions:
+					</h3>
+					<ul>
+						<li>
+							<strong data-i18n-key="ch21" class="brightpink"
+								>Image upload:</strong
+							>
+							<span data-i18n-key="ch21-span"
+								>Efficiently handling image uploads for recipe illustrations is
+								a must when building a cooking website. I decided to employ the
+								Multer library to manage image uploads and storage.</span
+							>
+						</li>
+						<li>
+							<strong data-i18n-key="ch22" class="brightpink"
+								>Switching from headless CMS to own backend:</strong
+							>
+							<span data-i18n-key="ch22-span"
+								>Recreating the endpoints in Express to keep the same
+								functionality and adding even more routes for image upload was
+								challenging. I kept the existing frontend and rewrote the
+								backend parts of the project to keep it running smooth.</span
+							>
+						</li>
+						<li>
+							<strong data-i18n-key="ch23" class="brightpink"
+								>Team communication & collaboration:</strong
+							>
+							<span data-i18n-key="ch23-span"
+								>Managing effective communication within a geographically
+								distributed team. To overcome these difficulties, we implemented
+								regular video meetings, Discord channels and project management
+								tools to facilitate communication, track progress, and assign
+								tasks. We also had to coordinate code changes and merges - to
+								achieve this, we utilized Git and GitHub to manage codebase
+								changes, review code, and resolve conflicts. Allocating tasks
+								and ensuring each team member's contributions align with project
+								goals was also not easy, but after assigning roles and
+								responsibilities based on individual strengths and expertise we
+								could effectively work together and deliver the project within
+								deadline, and we were even able to add some extra
+								functionalities (like hero image carousel and back-to-top
+								button).</span
+							>
+						</li>
+					</ul>
+					<h3 class="brightpink" data-i18n-key="tech">Technologies used:</h3>
+
+					<div class="project-tech list">
+						<span class="tech-stack-used">HTML5</span>
+						<span class="tech-stack-used">CSS3</span>
+						<span class="tech-stack-used">JavaScript</span>
+						<span class="tech-stack-used">React</span>
+					</div>
+
+					<div class="project-tech list">
+						<span class="tech-stack-used">Node</span>
+						<span class="tech-stack-used">Express</span>
+					</div>
+
+					<div class="project-tech list">
+						<span class="tech-stack-used">MongoDB</span>
+						<span class="tech-stack-used">Mongoose</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="tech-stack-used">Git</span>
+						<span class="tech-stack-used">GitHub</span>
+						<span class="tech-stack-used">Multer</span>
+					</div>
+					<div class="project-links">
+						<a
+							href="https://github.com/AnnaHittaller/Cooking-Light"
+							target="_blank"
+							><i class="fa-brands fa-github"></i
+						></a>
+						<!-- <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+					</div>
+					<a href="index.html#works"
+						><button data-i18n-key="back">Back to the overview</button></a
+					>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<span data-i18n-key="built-with">Built with </span
+			><img src="./assets/pixel-heart-25.png" alt="heart" />
+			<span data-i18n-key="by"> by Anna Hittaller © 2023</span>
+		</footer>
+
+		<!-- JS SCRIPTS --------------------->
+		<script src="./languageSwitcher.js"></script>
+		<script src="./animations.js"></script>
+		<script src="./observer.js"></script>
+		<script src="./lightbox.js"></script>
+	</body>
+</html>

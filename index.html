@@ -207,15 +207,12 @@
 						immersive online experiences that delight users and exceed client
 						expectations.
 					</p>
-					<p data-i18n-key="about-3">
+					<!-- <p data-i18n-key="about-3">
 						I am currently seeking opportunities and looking to join a team
 						where I can further enhance my skills and grow professionally. If
 						you believe that I could be a valuable addition to your team, I
 						would love to hear from you!
-					</p>
-					<!-- <a href="cv.html" target="_blank"
-						><button data-i18n-key="resume-btn">Resume</button></a
-					> -->
+					</p> -->
 				</div>
 			</section>
 
@@ -234,7 +231,23 @@
 					</div>
 
 					<div class="tech-icons-wrapper">
-						<!-- Tech icons in relevant order-------------------------------------------------------- -->
+						<!-- Tech icons -------------------------------------------------------- -->
+						<div class="tech-icon vue-icon">
+							<div class="icon-background">
+								<i class="fa-brands fa-vuejs"></i>
+							</div>
+							<span>Vue</span>
+						</div>
+
+						<div class="tech-icon vue-icon">
+							<div class="icon-background">
+								<img
+									src="https://api.iconify.design/simple-icons:nuxtdotjs.svg?color=%23ffd8e4"
+									alt="Nuxt" />
+							</div>
+							<span>Nuxt</span>
+						</div>
+
 						<div class="tech-icon react-icon">
 							<div class="icon-background">
 								<i class="fa-brands fa-react"></i>
@@ -248,20 +261,14 @@
 							</div>
 							<span>Javascript</span>
 						</div>
-<!-- 
+
+						<!-- 
 						<div class="tech-icon ts-icon">
 							<div class="icon-background">
 								<img src="assets/TS-100.png" />
 							</div>
 							<span>TypeScript</span>
 						</div> -->
-
-						<div class="tech-icon vue-icon">
-							<div class="icon-background">
-								<i class="fa-brands fa-vuejs"></i>
-							</div>
-							<span>Vue</span>
-						</div>
 
 						<div class="tech-icon html-icon">
 							<div class="icon-background">
@@ -279,6 +286,15 @@
 
 						<div class="tech-icon sass-icon">
 							<div class="icon-background">
+								<img
+									src="https://api.iconify.design/simple-icons:tailwindcss.svg?color=%23ffd8e4"
+									alt="Tailwind" />
+							</div>
+							<span>Tailwind CSS</span>
+						</div>
+
+						<div class="tech-icon sass-icon">
+							<div class="icon-background">
 								<i class="fa-brands fa-sass"></i>
 							</div>
 							<span>SASS</span>
@@ -286,14 +302,27 @@
 
 						<div class="tech-icon mongodb-icon">
 							<div class="icon-background">
-								<img src="assets/mongodb-96.png" />
+								<img
+									src="https://api.iconify.design/simple-icons:firebase.svg?color=%23ffd8e4"
+									alt="MongoDB" />
+							</div>
+							<span>Firebase</span>
+						</div>
+
+						<div class="tech-icon mongodb-icon">
+							<div class="icon-background">
+								<img
+									src="https://api.iconify.design/simple-icons:mongodb.svg?color=%23ffd8e4"
+									alt="MongoDB" />
 							</div>
 							<span>MongoDB</span>
 						</div>
 
 						<div class="tech-icon express-icon">
 							<div class="icon-background">
-								<p>ex</p>
+								<img
+									src="https://api.iconify.design/simple-icons:express.svg?color=%23ffd8e4"
+									alt="express" />
 							</div>
 							<span>Express.js</span>
 						</div>
@@ -340,6 +369,60 @@
 					</div>
 
 					<div class="project-cards-wrapper">
+						<div class="project-card reverse">
+							<a href="found-a-bird.html" class="project-thumbnail">
+								<img
+									src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707829252/MyMDb_screenshot_3_ngibjg.jpg"
+									alt="I found a bird" />
+								<div class="overlay">
+									<p class="desktop-tablet-view" data-i18n-key="read-more">
+										Read more
+									</p>
+									<!--hidden on mobile-->
+								</div>
+							</a>
+
+							<div class="project-description">
+								<h4 class="project-title">MyMDb</h4>
+								<div class="project-text">
+									<h4 class="mobile-view">MyMDb</h4>
+									<!--hidden on desktop/tablet-->
+									<p data-i18n-key="mymdb-summary">
+										Never lose track of your movie must-watch list again. With a
+										user-friendly interface and a range of features, MyMDb
+										offers a seamless way to manage your watchlist and stay
+										updated with the latest trending movies.
+									</p>
+									<a href="mymdb.html">
+										<p class="mobile-view" data-i18n-key="read-more">
+											Read more
+										</p>
+									</a>
+									<!--hidden on desktop/tablet-->
+								</div>
+								<div class="project-tech">
+									<span class="tech-stack-used">Nuxt</span>
+									<span class="tech-stack-used">Nuxt UI</span>
+									<span class="tech-stack-used">Pinia</span>
+									<span class="tech-stack-used">Firebase</span>
+									<span class="tech-stack-used">Firestore</span>
+									<span class="tech-stack-used">Tailwind</span>
+								</div>
+								<div class="project-links">
+									<a
+										href="https://github.com/AnnaHittaller/mymdb"
+										target="_blank"
+										><i class="fa-brands fa-github"></i
+									></a>
+									<a
+										href="https://mymdb-my-movie-watchlist.netlify.app"
+										target="_blank"
+										><i class="fa-solid fa-up-right-from-square"></i
+									></a>
+								</div>
+							</div>
+						</div>
+
 						<div class="project-card">
 							<a href="catspotter.html" class="project-thumbnail">
 								<img
@@ -447,56 +530,6 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="project-card">
-							<a href="cooking-light.html" class="project-thumbnail">
-								<img
-									src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg"
-									alt="app screenshot" />
-								<div class="overlay">
-									<p class="desktop-tablet-view" data-i18n-key="read-more">
-										Read more
-									</p>
-									<!--hidden on mobile-->
-								</div>
-							</a>
-
-							<div class="project-description">
-								<h4 class="project-title">Cooking Light</h4>
-								<div class="project-text">
-									<h4 class="mobile-view">Cooking Light</h4>
-									<!--hidden on desktop/tablet-->
-									<p data-i18n-key="cooking-summary">
-										A fullstack project to upload, share, and save recipes to
-										the logged in user's own recipe book. Originally built with
-										Contentful, but later modified to use my own RESTful API for
-										user and recipe management.
-									</p>
-									<a href="cooking-light.html">
-										<p class="mobile-view" data-i18n-key="read-more">
-											Read more
-										</p>
-									</a>
-									<!--hidden on desktop/tablet-->
-								</div>
-								<div class="project-tech">
-									<span class="tech-stack-used">React</span>
-									<span class="tech-stack-used">Express</span>
-									<span class="tech-stack-used">Node</span>
-									<span class="tech-stack-used">MongoDB</span>
-								</div>
-								<div class="project-links">
-									<a
-										href="https://github.com/AnnaHittaller/Cooking-Light"
-										target="_blank"
-										><i class="fa-brands fa-github"></i
-									></a>
-									<!-- <a href="" target="_blank"
-										><i class="fa-solid fa-up-right-from-square"></i
-									></a> -->
-								</div>
-							</div>
-						</div>
 					</div>
 
 					<div class="section-title-wrapper">
@@ -509,6 +542,60 @@
 						</h3>
 					</div>
 					<div class="small-cards">
+						<div class="small-card">
+							<img
+								alt="screenshot from Cooking Light"
+								src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707835386/Budo-Club_screenshot_z65adu.png" />
+							<div class="small-overlay">
+								<h3>Jiu Jitsu Club Website</h3>
+								<p data-i18n-key="jiu-jitsu-summary">
+									This website, developed for a local jiu-jitsu club, offers a
+									clear site structure and responsive design.
+								</p>
+								<div class="project-tech">
+									<span class="tech-stack-used">Vue</span>
+									<span class="tech-stack-used">Tailwind</span>
+									<span class="tech-stack-used">Swiper JS</span>
+								</div>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://github.com/AnnaHittaller/budo-club"
+									target="_blank"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a href="https://jiu-jitsu-club.netlify.app" target="_blank"
+									><i class="fa-solid fa-up-right-from-square"></i
+								></a>
+							</div>
+						</div>
+
+						<div class="small-card">
+							<img
+								alt="screenshot from Cooking Light"
+								src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707833925/Cooking_Light_screenshot2_tpdcyo.jpg" />
+							<div class="small-overlay">
+								<h3>Cooking Light</h3>
+								<p data-i18n-key="cooking-light-summary">
+									Upload, share, and save recipes to the logged in user's own
+									recipe book.
+								</p>
+								<div class="project-tech">
+									<span class="tech-stack-used">React</span>
+									<span class="tech-stack-used">Express</span>
+									<span class="tech-stack-used">Node</span>
+									<span class="tech-stack-used">MongoDB</span>
+								</div>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://github.com/AnnaHittaller/Cooking-Light"
+									target="_blank"
+									><i class="fa-brands fa-github"></i
+								></a>
+							</div>
+						</div>
+
 						<div class="small-card">
 							<img
 								alt="screenshot from Usagi's Kitchen app"

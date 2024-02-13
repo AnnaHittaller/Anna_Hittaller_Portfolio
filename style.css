@@ -199,7 +199,7 @@ nav {
 .check-toggle-label {
 	display: block;
 	position: relative;
-	cursor: pointer;
+	/* cursor: pointer; */
 	outline: none;
 	user-select: none;
 	-ms-user-select: none;
@@ -624,14 +624,9 @@ h2 {
 	font-size: 3.5rem;
 }
 
-.icon-background img[src="assets/mongodb-96.png"] {
+.icon-background img {
 	opacity: 0.5;
 	height: 3.5rem;
-}
-
-.icon-background img[src="assets/TS-100.png"] {
-	height: 3.25rem;
-	opacity: 0.6;
 }
 
 /* PROJECT SECTION ------------------ */
@@ -682,6 +677,7 @@ h2 {
 	object-fit: cover;
 	display: block;
 	object-position: top;
+	border: 2px solid var(--seethrough-pink-05);
 }
 
 .overlay {
@@ -816,6 +812,7 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
+	max-width: calc(100% - 6rem);
 }
 
 .small-card {
@@ -1358,6 +1355,10 @@ footer span {
 
 	.project-cards-wrapper {
 		width: 100%;
+	}
+
+	.small-cards {
+		max-width: calc(100% - 2rem);
 	}
 
 	.contact-icons-wrapper {
