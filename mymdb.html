@@ -97,10 +97,6 @@
 								<span class="de">DE</span>
 							</label>
 						</div>
-
-						<!-- <a href="cv.html" target="_blank"
-							><button data-i18n-key="resume-btn">Resume</button></a
-						> -->
 					</div>
 				</div>
 
@@ -158,65 +154,63 @@
 				<div class="project-wrapper">
 					<div class="section-title-wrapper">
 						<h2 data-i18n-key="project-details">Project details</h2>
-						<h3>Cooking Light</h3>
+						<h3>MyMDb</h3>
 					</div>
 					<p data-i18n-key="p2-1">
-						Cooking Light is a full-stack web application that serves as a
-						digital recipe collection, allowing users to upload, save, and
-						explore recipes. The application provides a seamless experience for
-						culinary enthusiasts to share their favorite recipes and to create a
-						personalized collection. The app provides an optimal user experience
-						across various devices and screen sizes thanks to a responsive
-						design.
+						MyMDb simplifies the process of managing your movie watchlist by
+						providing an easy-to-use platform integrated with the TMDB API to
+						discover, track, and explore a vast collection of movies. From
+						discovering new releases to prioritizing what to watch next, MyMDb
+						offers a comprehensive solution for movie enthusiasts.
 					</p>
-					<p data-i18n-key="p2-2">
-						The project was first created collaboratively with Contentful as
-						headless CMS, and was later modified individually to practice
-						creating fullstack apps with routing endpoints and RESTful APIs with
-						the help of Express server and Node.
-					</p>
-					<!-- <div class="project-images">
-						<img
-							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot3_zvaz7m.jpg"
-							alt="app screenshot" />
-						<img
-							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg"
-							alt="app screenshot" />
-						<img
-							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot4_qtqxaj.jpg"
-							alt="app screenshot" />
-						<img
-							src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot_cfct34.jpg"
-							alt="app screenshot" />
-					</div> -->
 
 					<div class="wrapper">
 						<div class="gallery" tabindex="0">
 							<div class="image">
 								<span
-									><img tabindex="0"
-										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot3_zvaz7m.jpg"
+									><img
+										tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707906399/MyMDb_screenshot5_ackt06.jpg"
 										alt="app screenshot"
 								/></span>
 							</div>
 							<div class="image">
 								<span
-									><img tabindex="0"
-										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot2_iveg2k.jpg"
+									><img
+										tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707906399/MyMDb_screenshot4_ctatpb.jpg"
 										alt="app screenshot"
 								/></span>
 							</div>
 							<div class="image">
 								<span
-									><img tabindex="0"
-										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot4_qtqxaj.jpg"
+									><img
+										tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707906399/MyMDb_screenshot3_rsjewt.jpg"
 										alt="app screenshot"
 								/></span>
 							</div>
 							<div class="image">
 								<span
-									><img tabindex="0"
-										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692039629/Portfolio/Cooking_Light_screenshot_cfct34.jpg"
+									><img
+										tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707906399/MyMDb_screenshot_zgwu4p.jpg"
+										alt="app screenshot"
+								/></span>
+							</div>
+							<div class="image">
+								<span
+									><img
+										tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707906399/MyMDb_screenshot2_ee2v4k.jpg"
+										alt="app screenshot"
+								/></span>
+							</div>
+							<div class="image">
+								<span
+									><img
+										tabindex="0"
+										src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1707829251/MyMDb_screenshot_4_qgcnze.jpg"
 										alt="app screenshot"
 								/></span>
 							</div>
@@ -240,91 +234,81 @@
 					<ul>
 						<li>
 							<strong class="brightpink" data-i18n-key="f21-s"
-								>Recipe Management:</strong
+								>User Management:</strong
 							>
 							<p>
-								<u data-i18n-key="f21-u">CRUD operations:</u>
+								<u data-i18n-key="f21-u">Authentication:</u>
 								<span data-i18n-key="f21-span">
-									Users can create, read, update, and delete their recipes.
+									Users can easily register and sign in to access personalized
+									features. The user authentication process is done with
+									Firebase Auth.
 								</span>
 							</p>
 							<p>
-								<u data-i18n-key="f21-u1">Image upload:</u>
+								<u data-i18n-key="f21-u1">Storage of user data:</u>
 								<span data-i18n-key="f21-span1">
-									Integrated image uploading for recipe illustrations.
+									The users' personalized data, including theme colors and movie
+									lists, are stored in Cloud Firestore.
 								</span>
 							</p>
 							<p>
-								<u data-i18n-key="f21-u2">Hero image carousel:</u>
+								<u data-i18n-key="f21-u2">Forgot password function:</u>
 								<span data-i18n-key="f21-span2">
-									The homepage displays a hero section with a dynamically
-									rendered featured recipe carousel.
+									Users can easily retrieve a new password in case they forgot
+									their login credentials.
 								</span>
 							</p>
 							<p>
-								<u data-i18n-key="f21-u3">Like functionality:</u>
+								<u data-i18n-key="f21-u3">Customization possibilities:</u>
 								<span data-i18n-key="f21-span3">
-									Users can like the individual recipes, saving them into their
-									own recipe book within the app, only available for logged-in
-									users.
+									Users can personalize their experience by selecting their
+									preferred theme color, which will be reflected throughout the
+									whole application.
 								</span>
 							</p>
 						</li>
 						<li>
 							<strong class="brightpink" data-i18n-key="f22-s"
-								>User Management:</strong
+								>Movie Management:</strong
 							>
 							<p>
-								<u data-i18n-key="f22-u">CRUD operations:</u>
+								<u data-i18n-key="f22-u">Creating a watchlist:</u>
 								<span data-i18n-key="f22-span">
-									The API is written so that users can register, update, and
-									delete their profiles. In the present state of the project it
-									can be tested with guest credentials, until all-round data
-									safety measurements will be applied in the upcoming version.
+									Users can add movies to their watchlist to keep track of
+									movies they intend to watch.
 								</span>
 							</p>
 							<p>
-								<u data-i18n-key="f22-u1">Local storage:</u>
+								<u data-i18n-key="f22-u1">Watch Next Selection:</u>
 								<span data-i18n-key="f22-span1">
-									User data is saved to local storage to enable saving recipes
-									into their own recipe books.
-								</span>
-							</p>
-						</li>
-						<li>
-							<strong class="brightpink" data-i18n-key="f23-s"
-								>MongoDB Database:</strong
-							>
-							<p>
-								<u data-i18n-key="f23-u">Data storage:</u>
-								<span data-i18n-key="f23-span">
-									Utilized MongoDB to store user information, recipes, and
-									associated data.
+									Allows users to prioritize movies by selecting them to watch
+									next. These movies are displayed in a separate list to help
+									keep planning the next movie night.
 								</span>
 							</p>
 							<p>
-								<u data-i18n-key="f23-u1">Mongoose Schema:</u>
-								<span data-i18n-key="f23-span1">
-									Designed data models using Mongoose for consistent and
-									organized database interactions.
-								</span>
-							</p>
-						</li>
-						<li>
-							<strong class="brightpink" data-i18n-key="f24-s"
-								>Express server:</strong
-							>
-							<p>
-								<u data-i18n-key="f24-u">RESTful API:</u>
-								<span data-i18n-key="f24-span">
-									Built a RESTful API using Express to handle client-server
-									communication.
+								<u data-i18n-key="f22-u2">Individual movie pages:</u>
+								<span data-i18n-key="f22-span2">
+									Displays detailed information about the selected movie,
+									including plot summary, cast, ratings, and more. Features a
+									'More Like This' list to spark interest in similar movies.
 								</span>
 							</p>
 							<p>
-								<u data-i18n-key="f24-u1">Endpoint routing:</u>
-								<span data-i18n-key="f24-span1">
-									Structured API routes for user and recipe management.
+								<u data-i18n-key="f22-u3">Movie search and discovery:</u>
+								<span data-i18n-key="f22-span3">
+									Utilizing the TMDB API, users can search for movies, discover
+									new releases, and explore a comprehensive database of films.
+									With the filtering possibilities for minimum rating and
+									genres, they can retrieve even more relevant results.
+								</span>
+							</p>
+							<p>
+								<u data-i18n-key="f22-u4">'Trending Now' Carousel:</u>
+								<span data-i18n-key="f22-span4">
+									Users can stay updated with the latest trends through a
+									dynamic carousel showcasing the week's trending movies right
+									on top of the main page.
 								</span>
 							</p>
 						</li>
@@ -335,78 +319,74 @@
 					<ul>
 						<li>
 							<strong data-i18n-key="ch21" class="brightpink"
-								>Image upload:</strong
+								>Data management across Firebase and Firestore:</strong
 							>
 							<span data-i18n-key="ch21-span"
-								>Efficiently handling image uploads for recipe illustrations is
-								a must when building a cooking website. I decided to employ the
-								Multer library to manage image uploads and storage.</span
+								>Effectively handling user data and performing CRUD operations
+								on movie lists required parallel actions to be executed in
+								Firestore and Firebase. This involved implementing comprehensive
+								data management strategies to ensure seamless synchronization
+								between the frontend and backend.</span
 							>
 						</li>
 						<li>
 							<strong data-i18n-key="ch22" class="brightpink"
-								>Switching from headless CMS to own backend:</strong
+								>Integration of Pinia for Efficient API Calls and Data
+								Handling:</strong
 							>
 							<span data-i18n-key="ch22-span"
-								>Recreating the endpoints in Express to keep the same
-								functionality and adding even more routes for image upload was
-								challenging. I kept the existing frontend and rewrote the
-								backend parts of the project to keep it running smooth.</span
+								>Integrating Pinia was essential for optimizing data handling
+								and minimizing unnecessary API calls to Firebase and TMDB. By
+								leveraging Pinia's state management, I could ensure efficient
+								management of user movie lists, theme colors, and trending
+								movies, enhancing the overall performance and responsiveness of
+								the app.</span
 							>
 						</li>
 						<li>
 							<strong data-i18n-key="ch23" class="brightpink"
-								>Team communication & collaboration:</strong
+								>API integration:</strong
 							>
 							<span data-i18n-key="ch23-span"
-								>Managing effective communication within a geographically
-								distributed team. To overcome these difficulties, we implemented
-								regular video meetings, Discord channels and project management
-								tools to facilitate communication, track progress, and assign
-								tasks. We also had to coordinate code changes and merges - to
-								achieve this, we utilized Git and GitHub to manage codebase
-								changes, review code, and resolve conflicts. Allocating tasks
-								and ensuring each team member's contributions align with project
-								goals was also not easy, but after assigning roles and
-								responsibilities based on individual strengths and expertise we
-								could effectively work together and deliver the project within
-								deadline, and we were even able to add some extra
-								functionalities (like hero image carousel and back-to-top
-								button).</span
+								>Implementing the search and discovery function posed challenges
+								within the limitations of the TMDB API. Ensuring optimal results
+								required careful management of API calls and queries, frontend
+								and backend error handling, and minimizing retrieved data to
+								essential fields.</span
 							>
 						</li>
 					</ul>
 					<h3 class="brightpink" data-i18n-key="tech">Technologies used:</h3>
 
 					<div class="project-tech list">
-						<span class="tech-stack-used">HTML5</span>
-						<span class="tech-stack-used">CSS3</span>
-						<span class="tech-stack-used">JavaScript</span>
-						<span class="tech-stack-used">React</span>
+						<span class="tech-stack-used">Nuxt + Nitro</span>
+						<span class="tech-stack-used">Nuxt UI</span>
+						<span class="tech-stack-used">Tailwind CSS</span>
 					</div>
 
 					<div class="project-tech list">
-						<span class="tech-stack-used">Node</span>
-						<span class="tech-stack-used">Express</span>
+						<span class="tech-stack-used">Pinia</span>
+						<span class="tech-stack-used">Zod</span>
 					</div>
 
 					<div class="project-tech list">
-						<span class="tech-stack-used">MongoDB</span>
-						<span class="tech-stack-used">Mongoose</span>
+						<span class="tech-stack-used">Firebase</span>
+						<span class="tech-stack-used">Firebase Auth</span>
+						<span class="tech-stack-used">Cloud Firestore</span>
 					</div>
 
 					<div class="project-tech">
-						<span class="tech-stack-used">Git</span>
-						<span class="tech-stack-used">GitHub</span>
-						<span class="tech-stack-used">Multer</span>
+						<span class="tech-stack-used">Formkit Auto-Animate</span>
 					</div>
 					<div class="project-links">
-						<a
-							href="https://github.com/AnnaHittaller/Cooking-Light"
-							target="_blank"
+						<a href="https://github.com/AnnaHittaller/mymdb" target="_blank"
 							><i class="fa-brands fa-github"></i
 						></a>
-						<!-- <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+						<a
+							href="https://mymdb-my-movie-watchlist.netlify.app"
+							target="_blank"
+							><i class="fa-solid fa-up-right-from-square"></i
+						></a>
 					</div>
 					<a href="index.html#works"
 						><button data-i18n-key="back">Back to the overview</button></a
