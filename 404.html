@@ -34,8 +34,8 @@
 			referrerpolicy="no-referrer" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<script>
-			if(window.location.href === "cv.html") {
-				window.location.href = "index.html"
+			if (window.location.href === "cv.html") {
+				window.location.href = "index.html";
 			}
 		</script>
 		<title>Anna Hittaller portfolio</title>
@@ -102,10 +102,6 @@
 							data-i18n-key="contact-me"
 							>Contact me</a
 						>
-
-						<a href="cv.html"
-							><button data-i18n-key="resume-btn">Resume</button></a
-						>
 					</div>
 				</div>
 
@@ -150,29 +146,25 @@
 			</div>
 			<!-- vertical divs end -->
 
-			<section class="cv" id="english-cv">
-				<img
-					src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1692903515/Anna_Hittaller_Resume_vz4umd.png"
-					alt="Anna Hittaller CV" />
-				<a href="assets/Anna_Hittaller_Resume.pdf" download
-					><button>Download PDF</button></a
-				>
-			</section>
-			<section class="cv" id="german-cv">
-				<img
-					src="https://res.cloudinary.com/dgum1eu6e/image/upload/v1694628082/Anna_Hittaller_Lebenslauf-1_d4rk6t.png"
-					alt="Anna Hittaller CV" />
-				<a href="assets/Anna_Hittaller_Lebenslauf.pdf" download
-					><button>PDF herunterladen</button></a
+			<section class="error">
+				<div class="section-title-wrapper">
+					<h2 data-i18n-key="error">Error 404</h2>
+					<h3>
+						<span class="seethrough-pink" data-i18n-key="ooops">Ooops, </span>
+						<span data-i18n-key="not-found">this page is not found</span>
+					</h3>
+				</div>
+				<a href="index.html"
+					><button data-i18n-key="home">Back to homepage</button></a
 				>
 			</section>
 		</main>
 
-		<footer>
+		<!-- <footer>
 			<span data-i18n-key="built-with">Built with </span
 			><img src="./assets/pixel-heart-25.png" alt="heart" />
 			<span data-i18n-key="by"> by Anna Hittaller © 2023</span>
-		</footer>
+		</footer> -->
 
 		<!-- JS SCRIPTS --------------------->
 		<script src="./languageSwitcher.js"></script>
